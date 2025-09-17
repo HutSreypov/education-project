@@ -157,10 +157,33 @@ body {
 
 .main-contain {
   display: flex;
+  justify-content: space-evenly;
 }
-.main-contain .card-1 {
+.main-contain .cart-1 {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: rgba(255, 86, 34, 0.0745098039);
+  width: 18%;
+  margin-top: 50px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(255, 166, 0, 0.251);
+  height: 14vh;
 }
-.main-contain .card-1 .card-img {
-  width: 10%;
+.main-contain .cart-1 .card-img {
+  width: 24%;
+}
+.main-contain .cart-1 p {
+  font-weight: bold;
+  font-size: 24px;
+}
+.main-contain .cart-1 span {
+  color: gray;
+  font-size: 16px;
+}
+.main-contain .cart-1:hover {
+  background: rgba(255, 166, 0, 0.389);
+  transform: translateY(-5px);
+  transition: 0.5s;
 }/*# sourceMappingURL=index.css.map */
