@@ -94,5 +94,118 @@ body {
   color: #FF5722;
   border-bottom: 4px solid #FF5722;
   border-radius: 2px;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
+}
+
+.header-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image14.png) center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .title {
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact .section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF5722;
+  /* same blue color */
+  margin: 40px 0;
+  width: 20%;
+}
+.contact h2 {
+  font-size: 36px;
+}
+.contact .section-title::before,
+.contact .section-title::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #FF5722;
+  margin: 0 15px;
+}
+.contact .section-title::before {
+  margin-right: 10px;
+}
+.contact .section-title::after {
+  margin-left: 10px;
+}
+.contact .section-title::before {
+  box-shadow: 0 -6px 0 0 #FF5722;
+}
+.contact .section-title::after {
+  box-shadow: 0 -6px 0 0 #FF5722;
+}
+
+.main-container {
+  padding: 100px;
+}
+.main-container .contact-1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.main-container .contact-1 p {
+  font-size: 22px;
+}
+.main-container .contact-1 .material-icons {
+  background: orange;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 26px;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.group .group-con {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.group .get {
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 26px;
+}
+form .name {
+  display: flex;
+  gap: 20px;
+}
+form input {
+  padding: 22px;
+  border: 1px solid rgba(128, 128, 128, 0.437);
+}
+form textarea {
+  padding: 50px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.437);
+}
+form button {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  background: rgba(0, 0, 255, 0.721);
+  color: #fff;
 }/*# sourceMappingURL=contact.css.map */

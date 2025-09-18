@@ -1,0 +1,67 @@
+.main-container {
+    padding: 100px;
+    .contact-1 {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        p {
+            font-size: 22px;
+        }
+
+        .material-icons {
+            background: $hover-color;
+            color: $white-color;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 26px;
+        }
+
+    }
+}
+.group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .group-con {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .get{
+        font-size: 24px;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 26px;
+
+    .name {
+        display: flex;
+        gap: 20px;
+    }
+
+    input {
+        padding: 22px;
+        border: 1px solid rgba(128, 128, 128, 0.437);
+    }
+
+    textarea {
+        padding: 50px;
+        font-size: 18px;
+         border: 1px solid rgba(128, 128, 128, 0.437);
+    }
+    button{
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        background: $blue-color;
+        color: $white-color;
+    }
+    
+}

@@ -1,3 +1,9 @@
+  header {
+      position: relative;
+      height: 80vh; /* Full screen height */
+    //   overflow: hidden;
+    }
+
 
 
 .content {
@@ -7,17 +13,23 @@
     color: $white-color ;
     flex-direction: column;
     line-height: 2;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/img/image1.png) center/cover no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 
     h1 {
         font-size: 40px;
         color: $white-color;
     }
-    span{
-        color:$hover-color ;
+
+    span {
+        color: $hover-color ;
         font-size: 18px;
     }
+
     p {
         font-size: 16px;
         width: 40%;
@@ -33,10 +45,12 @@
         font-size: 18px;
         text-decoration: none;
     }
-    .bnt-top{   
+
+    .bnt-top {
         display: flex;
         gap: 20px;
     }
+
     .join-now {
         border: 1px solid $white-color ;
         padding: 4px 14px;
@@ -52,10 +66,54 @@
         transform: translateY(-5px);
         transition: 0.5s;
     }
+
     .join-now:hover {
         border: none;
         background: $hover-color;
         transform: translateY(-5px);
         transition: 0.5s;
+    }
+}
+
+.slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/img/image1.png) center/cover no-repeat;
+}
+
+.slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/img/image12.png) center/cover no-repeat;
+}
+
+.slide3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(/img/image13.png) center/cover no-repeat;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    /* 3 slides */
+    height: 100%;
+    animation: slide 42s infinite;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-66.7%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }

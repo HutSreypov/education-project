@@ -1,0 +1,32 @@
+.section-container{
+    text-align: center;
+    margin-top: 40px;
+    // color: $accent-color;
+    .section-contain{
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+        gap: 20px;
+        .sub-card{
+            background: $card-color;
+            width: 12%;
+            height: 30vh;
+            @include center;
+            gap: 20px;
+            flex-direction: column;
+            border: 1px solid $hover-colors;
+            img{
+                width: 40%;
+            }
+            span{
+                color: $gray-color;
+            }
+        }
+        .sub-card:hover {
+        background: $hover-colors ;
+        transform: translateY(-5px);
+        transition: 0.5s;
+        border: none;
+    }
+    }
+}

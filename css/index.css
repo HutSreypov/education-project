@@ -94,7 +94,12 @@ body {
   color: #FF5722;
   border-bottom: 4px solid #FF5722;
   border-radius: 2px;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
+}
+
+header {
+  position: relative;
+  height: 80vh; /* Full screen height */
 }
 
 .content {
@@ -106,7 +111,12 @@ body {
   color: #fff;
   flex-direction: column;
   line-height: 2;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image1.png) center/cover no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
 }
 .content h1 {
   font-size: 40px;
@@ -155,6 +165,44 @@ body {
   transition: 0.5s;
 }
 
+.slide1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image1.png) center/cover no-repeat;
+}
+
+.slide2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image12.png) center/cover no-repeat;
+}
+
+.slide3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image13.png) center/cover no-repeat;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  /* 3 slides */
+  height: 100%;
+  animation: slide 42s infinite;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-66.7%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .main-contain {
   display: flex;
   gap: 30px;
@@ -165,7 +213,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: rgba(255, 86, 34, 0.1098039216);
+  background: rgba(255, 86, 34, 0.0352941176);
   width: 18%;
   margin-top: 50px;
   border-radius: 5px;
@@ -192,5 +240,33 @@ body {
 .section-container {
   text-align: center;
   margin-top: 40px;
-  color: #FF5722;
+}
+.section-container .section-contain {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  gap: 20px;
+}
+.section-container .section-contain .sub-card {
+  background: rgba(255, 86, 34, 0.0352941176);
+  width: 12%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  border: 1px solid rgba(255, 166, 0, 0.389);
+}
+.section-container .section-contain .sub-card img {
+  width: 40%;
+}
+.section-container .section-contain .sub-card span {
+  color: gray;
+}
+.section-container .section-contain .sub-card:hover {
+  background: rgba(255, 166, 0, 0.389);
+  transform: translateY(-5px);
+  transition: 0.5s;
+  border: none;
 }/*# sourceMappingURL=index.css.map */
