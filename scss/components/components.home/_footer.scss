@@ -1,0 +1,131 @@
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: $dropdown-text-color;
+    margin-top: 30px;
+    height: 50vh;
+    padding: 30px;
+    padding-left: 120px;
+    color: $white-color;
+
+    .link {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .link-1 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: $white-color;
+            font-size: 20px;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+            }
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .contact-footer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .con-1 {
+                display: flex;
+                gap: 12px;
+                font-size: 20px;
+            }
+
+        }
+
+        .footer-icon {
+            display: flex;
+            gap: 20px;
+            font-size: 24px;
+
+            i {
+                border: 1px solid white;
+                padding: 10px;
+                border-radius: 30px;
+            }
+
+            i:hover {
+                color: $hover-color;
+                background: $white-color;
+                transform: translateY(-5px);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .uesful {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+    .new{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        h1 {
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+        input{
+            position: absolute;
+            padding: 16px;
+            width: 18%;
+            font-size: 16px;
+        }
+        button{
+            position: absolute;
+            padding: 12px;
+            display: flex;
+            margin-left: 13.6%;
+            margin-top: 8px;
+            border: none;
+            background: $blue-color;
+            color: $white-color;
+        }
+    }
+}
+.lasr-footer{
+    width: 100%;
+    background: $dropdown-text-color;   
+    @include center;
+}
+.last{
+        width: 85%;
+        padding: 20px;
+        border-top: 1px solid gray;
+        color: $white-color;
+        text-align: center;
+        a{
+            color: $white-color;
+        }
+    }
