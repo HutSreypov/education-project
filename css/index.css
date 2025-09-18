@@ -157,14 +157,15 @@ body {
 
 .main-contain {
   display: flex;
-  justify-content: space-evenly;
+  gap: 30px;
+  justify-content: center;
 }
 .main-contain .cart-1 {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background: rgba(255, 86, 34, 0.0745098039);
+  background: rgba(255, 86, 34, 0.1098039216);
   width: 18%;
   margin-top: 50px;
   border-radius: 5px;
@@ -186,4 +187,10 @@ body {
   background: rgba(255, 166, 0, 0.389);
   transform: translateY(-5px);
   transition: 0.5s;
+}
+
+.section-container {
+  text-align: center;
+  margin-top: 40px;
+  color: #FF5722;
 }/*# sourceMappingURL=index.css.map */

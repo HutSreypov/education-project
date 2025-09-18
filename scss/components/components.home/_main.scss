@@ -1,6 +1,7 @@
 .main-contain {
     display: flex;
-    justify-content: space-evenly;
+    gap: 30px;
+    justify-content: center;
 
     .cart-1 {
         @include center;
@@ -31,4 +32,13 @@
         transform: translateY(-5px);
         transition: 0.5s;
     }
+}
+
+
+// =========SECTION=============
+
+.section-container{
+    text-align: center;
+    margin-top: 40px;
+    color: $accent-color;
 }
