@@ -1,13 +1,78 @@
-.section-container{
+.section-come {
+    @include center;
+    flex-direction: column;
+    background: $blue-colors;
+    height: 50vh;
+    line-height: 1.5;
+
+    span {
+        font-size: 18px;
+        text-align: center;
+        width: 64%;
+        line-height: 1.5;
+        color: $gray-color;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 2;
+        margin-top: -28px;
+    }
+    .ful-come {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding-left: 100px;
+        margin-top: 30px;
+        width: 100%;
+        .come-1 {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 26%;
+            }
+        }
+
+        .come-2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .skill {
+            width: 14%;
+        }
+
+        p {
+            font-size: 26px;
+        }
+
+        .topic {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-size: 20px;
+
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+
+}
+
+.section-container {
     text-align: center;
     margin-top: 40px;
-    // color: $accent-color;
-    .section-contain{
+    h1{
+        font-size: 30px;
+    }
+    .section-contain {
         display: flex;
         justify-content: center;
         margin-top: 36px;
         gap: 20px;
-        .sub-card{
+
+        .sub-card {
             background: $card-color;
             width: 12%;
             height: 30vh;
@@ -15,18 +80,21 @@
             gap: 20px;
             flex-direction: column;
             border: 1px solid $hover-colors;
-            img{
+
+            img {
                 width: 40%;
             }
-            span{
+
+            span {
                 color: $gray-color;
             }
         }
+
         .sub-card:hover {
-        background: $hover-colors ;
-        transform: translateY(-5px);
-        transition: 0.5s;
-        border: none;
-    }
+            background: $hover-colors ;
+            transform: translateY(-5px);
+            transition: 0.5s;
+            border: none;
+        }
     }
 }

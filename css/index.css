@@ -358,9 +358,68 @@ header {
   transition: 0.5s;
 }
 
+.section-come {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 255, 0.04);
+  height: 50vh;
+  line-height: 1.5;
+}
+.section-come span {
+  font-size: 18px;
+  text-align: center;
+  width: 64%;
+  line-height: 1.5;
+  color: gray;
+}
+.section-come h1 {
+  font-size: 30px;
+  line-height: 2;
+  margin-top: -28px;
+}
+.section-come .ful-come {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-left: 100px;
+  margin-top: 30px;
+  width: 100%;
+}
+.section-come .ful-come .come-1 {
+  display: flex;
+  align-items: center;
+}
+.section-come .ful-come .come-1 img {
+  width: 26%;
+}
+.section-come .ful-come .come-2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section-come .ful-come .skill {
+  width: 14%;
+}
+.section-come .ful-come p {
+  font-size: 26px;
+}
+.section-come .ful-come .topic {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+}
+.section-come .ful-come .topic i {
+  font-size: 24px;
+}
+
 .section-container {
   text-align: center;
   margin-top: 40px;
+}
+.section-container h1 {
+  font-size: 30px;
 }
 .section-container .section-contain {
   display: flex;
