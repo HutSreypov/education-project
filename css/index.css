@@ -490,4 +490,16 @@ header {
   border-radius: 210px;
   border: 8px solid rgba(255, 166, 0, 0.778);
   height: 48vh;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=index.css.map */
