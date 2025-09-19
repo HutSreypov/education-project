@@ -449,4 +449,45 @@ header {
   transform: translateY(-5px);
   transition: 0.5s;
   border: none;
+}
+
+.report {
+  display: flex;
+  align-items: center;
+  padding: 50px 110px;
+}
+.report .report-text {
+  display: flex;
+  flex-direction: column;
+}
+.report .report-text p {
+  font-size: 34px;
+  text-align: start;
+  width: 80%;
+  padding-left: 48px;
+}
+.report .report-text a {
+  margin-left: 48px;
+  text-decoration: none;
+  background: none;
+  border: 1px solid orange;
+  width: 12%;
+  color: orange;
+  padding: 10px;
+  text-align: center;
+  margin-top: 18px;
+  border-radius: 6px;
+}
+.report .report-text a:hover {
+  border: none;
+  background: orange;
+  color: #fff;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.report img {
+  width: 26%;
+  border-radius: 210px;
+  border: 8px solid rgba(255, 166, 0, 0.778);
+  height: 48vh;
 }/*# sourceMappingURL=index.css.map */

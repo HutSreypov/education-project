@@ -12,17 +12,20 @@
         line-height: 1.5;
         color: $gray-color;
     }
-    h1{
+
+    h1 {
         font-size: 30px;
         line-height: 2;
         margin-top: -28px;
     }
+
     .ful-come {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         padding-left: 100px;
         margin-top: 30px;
         width: 100%;
+
         .come-1 {
             display: flex;
             align-items: center;
@@ -63,9 +66,11 @@
 .section-container {
     text-align: center;
     margin-top: 40px;
-    h1{
+
+    h1 {
         font-size: 30px;
     }
+
     .section-contain {
         display: flex;
         justify-content: center;
@@ -96,5 +101,51 @@
             transition: 0.5s;
             border: none;
         }
+    }
+}
+
+.report {
+    display: flex;
+    align-items: center;
+    padding: 50px 110px;
+
+    .report-text {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 34px;
+            text-align: start;
+            width: 80%;
+            padding-left: 48px;
+        }
+
+        a {
+            margin-left: 48px;
+            text-decoration: none;
+            background: none;
+            border: 1px solid orange;
+            width: 12%;
+            color: orange;
+            padding: 10px;
+            text-align: center;
+            margin-top: 18px;
+            border-radius: 6px;
+        }
+
+        a:hover {
+            border: none;
+            background: $hover-color ;
+            color: $white-color;
+            transform: translateY(-5px);
+            transition: 0.5s;
+        }
+    }
+
+    img {
+        width: 26%;
+        border-radius: 210px;
+        border: 8px solid rgba(255, 166, 0, 0.778);
+        height: 48vh;
     }
 }
