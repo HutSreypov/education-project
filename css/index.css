@@ -113,14 +113,14 @@ body {
   gap: 18px;
 }
 .footer-container .link h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 .footer-container .link .link-1 {
   display: flex;
   align-items: center;
   gap: 12px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer-container .link .link-1 a {
   text-decoration: none;
@@ -132,7 +132,7 @@ body {
   gap: 18px;
 }
 .footer-container .footer-contact h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 .footer-container .footer-contact .contact-footer {
   display: flex;
@@ -142,7 +142,7 @@ body {
 .footer-container .footer-contact .contact-footer .con-1 {
   display: flex;
   gap: 12px;
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer-container .footer-contact .footer-icon {
   display: flex;
@@ -166,10 +166,10 @@ body {
   gap: 14px;
 }
 .footer-container .uesful h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 .footer-container .uesful p {
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer-container .new {
   display: flex;
@@ -177,10 +177,10 @@ body {
   gap: 18px;
 }
 .footer-container .new h1 {
-  font-size: 30px;
+  font-size: 24px;
 }
 .footer-container .new p {
-  font-size: 20px;
+  font-size: 18px;
 }
 .footer-container .new input {
   position: absolute;
@@ -364,7 +364,7 @@ header {
   align-items: center;
   flex-direction: column;
   background: rgba(0, 0, 255, 0.04);
-  height: 50vh;
+  padding-top: 60px;
   line-height: 1.5;
 }
 .section-come span {
@@ -389,6 +389,7 @@ header {
 .section-come .ful-come .come-1 {
   display: flex;
   align-items: center;
+  padding: 20px;
 }
 .section-come .ful-come .come-1 img {
   width: 26%;
@@ -397,6 +398,14 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+.section-come .ful-come .come-1:hover {
+  border-bottom: 2px solid rgba(0, 0, 255, 0.622);
+  width: 80%;
+}
+.section-come .ful-come .come-2:hover {
+  border-bottom: 2px solid rgba(0, 0, 255, 0.622);
+  width: 80%;
 }
 .section-come .ful-come .skill {
   width: 14%;
@@ -464,10 +473,10 @@ header {
   font-size: 34px;
   text-align: start;
   width: 80%;
-  padding-left: 48px;
+  padding-left: 44px;
 }
 .report .report-text a {
-  margin-left: 48px;
+  margin-left: 44px;
   text-decoration: none;
   background: none;
   border: 1px solid orange;
@@ -502,4 +511,24 @@ header {
   100% {
     transform: translateY(0);
   }
+}
+
+.career {
+  display: flex;
+}
+.career .career-card-1 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px rgba(40, 39, 38, 0.251);
+  width: 16%;
+  height: 40vh;
+  border-radius: 20PX;
+  border: 1px solid rgba(128, 128, 128, 0.519);
+}
+.career .career-card-1 img {
+  border-radius: 22px;
+  padding: 14PX;
+}
+.career .career-card-1 .career-card-1-text {
+  padding-left: 18px;
 }/*# sourceMappingURL=index.css.map */
