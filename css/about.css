@@ -95,4 +95,304 @@ body {
   border-bottom: 4px solid #FF5722;
   border-radius: 2px;
   padding-bottom: 28px;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 60px;
+  height: 120vh;
+}
+.section-container img {
+  width: 38%;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.section-container .section-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  padding: 30px;
+  align-items: center;
+}
+.section-container .section-text p {
+  font-size: 18px;
+}
+.section-container .section-text span {
+  align-self: flex-start;
+  color: orange;
+  font-size: 18px;
+}
+.section-container .section-text a {
+  background: orange;
+  padding: 10px 14px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.section-container .section-text a:hover {
+  background: none;
+  border: 1px solid orange;
+  color: orange;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.section-container .section-text .section-icon {
+  display: flex;
+  gap: 30px;
+}
+.section-container .section-text .section-icon .icon-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-container .section-text .section-icon .icon-1 i {
+  color: orange;
+  font-size: 22px;
+}
+.section-container .section-text .section-icon .icon-1 p {
+  font-size: 18px;
+}
+
+.section-containers {
+  text-align: center;
+}
+.section-containers h1 {
+  font-size: 30px;
+}
+.section-containers .section-contain {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.section-containers .section-contain .sub-card {
+  background: rgba(255, 86, 34, 0.0352941176);
+  width: 12%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  border: 1px solid rgba(255, 166, 0, 0.389);
+}
+.section-containers .section-contain .sub-card img {
+  width: 40%;
+}
+.section-containers .section-contain .sub-card span {
+  color: gray;
+}
+.section-containers .section-contain .sub-card:hover {
+  background: rgba(255, 166, 0, 0.389);
+  transform: translateY(-5px);
+  transition: 0.5s;
+  border: none;
+}
+
+.infor-expert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+.infor-expert .span {
+  font-size: 24px;
+  color: orange;
+}
+.infor-expert h1 {
+  font-size: 30px;
+}
+.infor-expert .expert {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 70px;
+}
+.infor-expert .expert .expert-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 60vh;
+  line-height: 2;
+  background: rgba(255, 86, 34, 0.0352941176);
+}
+.infor-expert .expert .expert-1 img {
+  width: 100%;
+}
+.infor-expert .expert .expert-1 img:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.infor-expert .expert .expert-1 p {
+  font-size: 20px;
+}
+.infor-expert .expert .expert-1 span {
+  color: gray;
+}
+.infor-expert .expert .expert-1 .icon-imgs {
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.911);
+  padding: 8px;
+  margin-top: -18px;
+}
+.infor-expert .expert .expert-1 .icon-imgs i {
+  font-size: 20px;
+  background: orange;
+  padding: 6px;
+  color: #fff;
+}
+
+.personal-infor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.personal-infor .card-infor {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+.personal-infor .card-infor img {
+  width: 20%;
+  border-radius: 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(0, 0, 0, 0.87);
+  margin-top: 30px;
+  height: 50vh;
+  padding: 30px;
+  padding-left: 120px;
+  color: #fff;
+}
+.footer-container .link {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-container .link h1 {
+  font-size: 24px;
+}
+.footer-container .link .link-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 18px;
+}
+.footer-container .link .link-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-container .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-container .footer-contact h1 {
+  font-size: 24px;
+}
+.footer-container .footer-contact .contact-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-container .footer-contact .contact-footer .con-1 {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+}
+.footer-container .footer-contact .footer-icon {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+}
+.footer-container .footer-contact .footer-icon i {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+}
+.footer-container .footer-contact .footer-icon i:hover {
+  color: orange;
+  background: #fff;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.footer-container .uesful {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-container .uesful h1 {
+  font-size: 24px;
+}
+.footer-container .uesful p {
+  font-size: 18px;
+}
+.footer-container .new {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-container .new h1 {
+  font-size: 24px;
+}
+.footer-container .new p {
+  font-size: 18px;
+}
+.footer-container .new input {
+  position: absolute;
+  padding: 16px;
+  width: 18%;
+  font-size: 16px;
+}
+.footer-container .new button {
+  position: absolute;
+  padding: 12px;
+  display: flex;
+  margin-left: 13.6%;
+  margin-top: 8px;
+  border: none;
+  background: rgba(0, 0, 255, 0.622);
+  color: #fff;
+}
+
+.lasr-footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last {
+  width: 85%;
+  padding: 20px;
+  border-top: 1px solid gray;
+  color: #fff;
+  text-align: center;
+}
+.last a {
+  color: #fff;
 }/*# sourceMappingURL=about.css.map */

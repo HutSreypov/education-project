@@ -1,0 +1,193 @@
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 60px;
+    height: 120vh;
+
+    img {
+        width: 38%;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .section-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        padding: 30px;
+        align-items: center;
+
+        p {
+            font-size: 18px;
+        }
+
+        span {
+            align-self: flex-start;
+            color: $hover-color;
+            font-size: 18px;
+        }
+
+        a {
+            background: $hover-color;
+            padding: 10px 14px;
+            border-radius: 4px;
+            color: $white-color ;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background: none;
+            border: 1px solid $hover-color;
+            color: $hover-color;
+            transform: translateY(-5px);
+            transition: 0.5s;
+        }
+
+        .section-icon {
+            display: flex;
+            gap: 30px;
+
+            .icon-1 {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                i {
+                    color: $hover-color;
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// =================SECTION================
+
+.section-containers {
+    text-align: center;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .section-contain {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 20px;
+
+        .sub-card {
+            background: $card-color;
+            width: 12%;
+            height: 30vh;
+            @include center;
+            gap: 20px;
+            flex-direction: column;
+            border: 1px solid $hover-colors;
+
+            img {
+                width: 40%;
+            }
+
+            span {
+                color: $gray-color;
+            }
+        }
+
+        .sub-card:hover {
+            background: $hover-colors ;
+            transform: translateY(-5px);
+            transition: 0.5s;
+            border: none;
+        }
+    }
+}
+
+// ==============================SECTION======================
+.infor-expert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+
+    .span {
+        font-size: 24px;
+        color: $hover-color;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .expert {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 70px;
+
+        .expert-1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+            height: 60vh;
+            line-height: 2;
+            background: $card-color;
+
+            img {
+                width: 100%;
+            }
+
+            img:hover {
+                transition: 0.5s;
+                transform: scale(1.1);
+
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            span {
+                color: gray;
+            }
+
+            .icon-imgs {
+                display: flex;
+                gap: 10px;
+                background: $bg-color;
+                padding: 8px;
+                margin-top: -18px;
+
+                i {
+                    font-size: 20px;
+                    background: $hover-color;
+                    padding: 6px;
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
