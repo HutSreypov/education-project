@@ -77,52 +77,51 @@
 
 }
 
-.section-container {
-    text-align: center;
-    margin-top: 40px;
+// =======MAIN-CONTAINER=======
+.main-contain {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 30px;
+    .cart-1 {
+        @include center;
+        gap: 30px;
+        background: $card-color;
+        width: 18%;
+        margin-top: 50px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(255, 166, 0, 0.251);
+        height: 14vh;
 
-    h1 {
-        font-size: 30px;
+        .card-img {
+            width: 24%;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        span {
+            color: $gray-color ;
+            font-size: 16px;
+        }
     }
-
-    .section-contain {
-        display: flex;
-        justify-content: center;
-        margin-top: 36px;
-        gap: 20px;
-
-        .sub-card {
-            background: $card-color;
-            width: 12%;
-            height: 30vh;
-            @include center;
-            gap: 20px;
-            flex-direction: column;
-            border: 1px solid $hover-colors;
-
-            img {
-                width: 40%;
-            }
-
-            span {
-                color: $gray-color;
-            }
-        }
-
-        .sub-card:hover {
-            background: $hover-colors ;
-            transform: translateY(-5px);
-            transition: 0.5s;
-            border: none;
-        }
+    .cart-1:hover {
+        background: $hover-colors ;
+        transform: translateY(-5px);
+        transition: 0.5s;
     }
 }
+
+
+// ====REPORT=========
 
 .report {
     display: flex;
     align-items: center;
     padding: 50px 110px;
-
+    margin-top: 32px;
     .report-text {
         display: flex;
         flex-direction: column;
@@ -180,10 +179,52 @@
     }
 }
 
+// =========SECTION-CONTAINER===========
 
-// ========ALL-SUB==========
+.section-container {
+    text-align: center;
+    margin-top: 20px;
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .section-contain {
+        display: flex;
+        justify-content: center;
+        margin-top: 36px;
+        gap: 20px;
+
+        .sub-card {
+            background: $card-color;
+            width: 12%;
+            height: 30vh;
+            @include center;
+            gap: 20px;
+            flex-direction: column;
+            border: 1px solid $hover-colors;
+
+            img {
+                width: 40%;
+            }
+
+            span {
+                color: $gray-color;
+            }
+        }
+
+        .sub-card:hover {
+            background: $hover-colors ;
+            transform: translateY(-5px);
+            transition: 0.5s;
+            border: none;
+        }
+    }
+}
 
 
+
+// ========CAREER==========
 
 .career {
     display: flex;
@@ -265,3 +306,5 @@
 
 
 }
+
+// ===========FEADBACK==============
