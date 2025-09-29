@@ -482,20 +482,47 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 100px;
   flex-direction: column;
 }
-.infor-eduspark img {
-  width: 60%;
+.infor-eduspark .infor-img {
+  width: 100%;
 }
-.infor-eduspark span {
+.infor-eduspark .infor-img img {
+  height: 90vh;
+  width: 100%;
+}
+.infor-eduspark .text-eduspark {
+  text-align: center;
+  background: #fff;
+  padding: 22px;
+  width: 80%;
+  line-height: 2;
+  margin-top: -120px;
+  box-shadow: 2px 2px 10px rgba(255, 166, 0, 0.251);
+  animation: float 3s ease-in-out infinite;
+}
+.infor-eduspark .text-eduspark span {
   color: orange;
-  font-size: 20px;
+  font-size: 22px;
+}
+.infor-eduspark .text-eduspark p {
+  font-size: 18px;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .section-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .section-container h1 {
   font-size: 30px;
