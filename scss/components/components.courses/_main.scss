@@ -1,0 +1,16 @@
+.section-container{
+    @include center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 12px;
+    span{
+        color: $hover-color;
+        font-size: 18px;
+    }
+    .section-card-1{
+        width: 30%;
+        text-align: center;
+        line-height: 1.5;
+        
+    }
+}
