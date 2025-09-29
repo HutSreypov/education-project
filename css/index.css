@@ -120,7 +120,7 @@ body {
   align-items: center;
   gap: 12px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer-container .link .link-1 a {
   text-decoration: none;
@@ -142,12 +142,12 @@ body {
 .footer-container .footer-contact .contact-footer .con-1 {
   display: flex;
   gap: 12px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer-container .footer-contact .footer-icon {
   display: flex;
   gap: 20px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .footer-container .footer-contact .footer-icon i {
   border: 1px solid white;
@@ -169,7 +169,7 @@ body {
   font-size: 24px;
 }
 .footer-container .uesful p {
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer-container .new {
   display: flex;
@@ -177,10 +177,10 @@ body {
   gap: 18px;
 }
 .footer-container .new h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 .footer-container .new p {
-  font-size: 18px;
+  font-size: 14px;
 }
 .footer-container .new input {
   position: absolute;

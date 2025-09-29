@@ -1,3 +1,44 @@
+
+.contact {
+    @include center;
+    flex-direction: column;
+    .section-title {
+        @include center;
+        font-size: 24px;
+        font-weight: bold;
+        color: $accent-color;
+        /* same blue color */
+        margin: 40px 0;
+        width: 20%;
+    }
+    h2{
+        font-size: 36px;
+    }
+    .section-title::before,
+    .section-title::after {
+        content: "";
+        flex: 1;
+        border-bottom: 2px solid $accent-color;
+        margin: 0 15px;
+        //   position: relative;
+    }
+ .section-title::before {
+        margin-right: 10px;
+    }
+
+    .section-title::after {
+        margin-left: 10px;
+    }
+
+    .section-title::before {
+        box-shadow: 0 -6px 0 0 $accent-color;
+    }
+
+    .section-title::after {
+        box-shadow: 0 -6px 0 0 $accent-color;
+    }
+}
+
 .main-container {
     padding: 100px;
     .contact-1 {
