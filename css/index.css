@@ -478,6 +478,21 @@ header {
   }
 }
 
+.infor-eduspark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+  flex-direction: column;
+}
+.infor-eduspark img {
+  width: 60%;
+}
+.infor-eduspark span {
+  color: orange;
+  font-size: 20px;
+}
+
 .section-container {
   text-align: center;
   margin-top: 20px;
