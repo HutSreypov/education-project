@@ -329,7 +329,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(0, 0, 255, 0.04);
+  background: rgba(0, 0, 255, 0.06);
   padding-top: 60px;
   line-height: 1.5;
 }
@@ -518,7 +518,7 @@ header {
 .career {
   display: flex;
   width: 100%;
-  background-color: rgba(0, 0, 255, 0.04);
+  background-color: rgba(0, 0, 255, 0.06);
   padding: 100px;
   gap: 30px;
   margin-top: 30px;
@@ -581,4 +581,68 @@ header {
   transition: 0.5s;
   transform: scale(1.05);
   box-shadow: 2px 2px 10px rgba(40, 39, 38, 0.251);
+}
+
+.feadback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+}
+.feadback .span {
+  color: orange;
+  font-size: 20px;
+}
+.feadback .student-say {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  animation: scroll 10s linear infinite;
+  margin-top: 40px;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.feadback .student-say .student-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.feadback .student-say .student-1 p {
+  font-size: 18px;
+}
+.feadback .student-say .student-1 span {
+  color: gray;
+}
+.feadback .student-say .student-1 .student-img {
+  border: 2px solid rgba(255, 166, 0, 0.389);
+  width: 34%;
+  border-radius: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feadback .student-say .student-1 .student-img img {
+  width: 100%;
+  border-radius: 100%;
+}
+.feadback .student-say .student-1 .text-say {
+  text-align: center;
+  background: rgba(0, 0, 255, 0.06);
+  padding: 18px;
+  font-size: 14px;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
