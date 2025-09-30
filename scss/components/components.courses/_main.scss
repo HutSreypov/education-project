@@ -26,7 +26,7 @@
             }
             p {
                 color: $gray-color;
-                font-size: 18px;
+                font-size: 17px;
             }
 
             img {
@@ -38,4 +38,14 @@
             box-shadow: 2px 2px 10px rgba(255, 166, 0, 0.419);
         }
     }
+}
+
+
+// ============SECTION-CONTAIN=============
+.section-contain{
+    @include center;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 12px;
+    
 }
