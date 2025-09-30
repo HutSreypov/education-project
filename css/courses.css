@@ -127,7 +127,6 @@ body {
   gap: 40px;
   padding: 0px 140px;
   margin-top: 30px;
-  animation: float 3s ease-in-out infinite;
 }
 .section-container .secction-card .section-card-1 {
   display: flex;
@@ -149,17 +148,6 @@ body {
 }
 .section-container .secction-card .section-card-1 img {
   width: 16%;
-}
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 .section-container .secction-card .section-card-1:hover {
   transform: translateY(-5px);
