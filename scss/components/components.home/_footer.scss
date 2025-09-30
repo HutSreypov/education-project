@@ -9,8 +9,7 @@
     color: $white-color;
 
     .link {
-        display: flex;
-        flex-direction: column;
+        @include colum;
         gap: 18px;
 
         h1 {
@@ -18,8 +17,7 @@
         }
 
         .link-1 {
-            display: flex;
-            align-items: center;
+           @include flex;
             gap: 12px;
             color: $white-color;
             font-size: 16px;
@@ -32,8 +30,7 @@
     }
 
     .footer-contact {
-        display: flex;
-        flex-direction: column;
+        @include colum;
         gap: 18px;
 
         h1 {
@@ -41,8 +38,7 @@
         }
 
         .contact-footer {
-            display: flex;
-            flex-direction: column;
+            @include colum;
             gap: 20px;
 
             .con-1 {
@@ -74,8 +70,7 @@
     }
 
     .uesful {
-        display: flex;
-        flex-direction: column;
+        @include colum;
         gap: 14px;
 
         h1 {
@@ -86,8 +81,7 @@
         }
     }
     .new{
-        display: flex;
-        flex-direction: column;
+       @include colum;
         gap: 18px;
         h1 {
             font-size: 22px;

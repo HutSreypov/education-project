@@ -121,8 +121,27 @@ body {
   color: orange;
   font-size: 18px;
 }
-.section-container .section-card-1 {
-  width: 30%;
-  text-align: center;
+.section-container .secction-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+.section-container .secction-card .section-card-1 {
+  display: flex;
+  gap: 20px;
+  width: 32%;
+  border-radius: 12px;
+  border: 1px solid orange;
+  border-left: 5px solid orange;
   line-height: 1.5;
+  padding: 14px;
+}
+.section-container .secction-card .section-card-1 p {
+  color: gray;
+  font-size: 16px;
+}
+.section-container .secction-card .section-card-1 img {
+  width: 20%;
 }/*# sourceMappingURL=courses.css.map */
