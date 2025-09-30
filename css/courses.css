@@ -160,6 +160,70 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 50px;
   gap: 12px;
+}
+.section-contain .card-contain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 38px;
+  padding: 0px 100px;
+  margin-top: 30px;
+}
+.section-contain .card-contain .card-contain-1 {
+  margin-top: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school1.png) center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+}
+.section-contain .card-contain .card-contain-1 span {
+  font-size: 30px;
+  display: none;
+}
+.section-contain .card-contain .card-contain-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school2.png) center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.section-contain .card-contain .card-contain-2 span {
+  font-size: 30px;
+  display: none;
+}
+.section-contain .card-contain .card-contain-3 {
+  margin-top: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school3.png) center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+}
+.section-contain .card-contain .card-contain-3 span {
+  font-size: 30px;
+  display: none;
+}
+.section-contain .card-contain .card-contain-4 {
+  margin-top: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school4.png) center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+}
+.section-contain .card-contain .card-contain-4 span {
+  font-size: 30px;
+  display: none;
 }/*# sourceMappingURL=courses.css.map */

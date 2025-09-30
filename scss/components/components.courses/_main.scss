@@ -3,16 +3,19 @@
     flex-direction: column;
     margin-top: 40px;
     gap: 12px;
+
     span {
         color: $hover-color;
         font-size: 18px;
     }
+
     .secction-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         padding: 0px 140px;
         margin-top: 30px;
+
         .section-card-1 {
             display: flex;
             gap: 20px;
@@ -21,9 +24,11 @@
             line-height: 1.6;
             padding: 14px;
             box-shadow: 2px 2px 10px rgba(188, 187, 185, 0.586);
-            h1{
+
+            h1 {
                 font-size: 20px;
             }
+
             p {
                 color: $gray-color;
                 font-size: 17px;
@@ -33,7 +38,8 @@
                 width: 16%;
             }
         }
-        .section-card-1:hover{
+
+        .section-card-1:hover {
             @include hovers;
             box-shadow: 2px 2px 10px rgba(255, 166, 0, 0.419);
         }
@@ -42,10 +48,89 @@
 
 
 // ============SECTION-CONTAIN=============
-.section-contain{
+.section-contain {
     @include center;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 50px;
     gap: 12px;
+
+    .card-contain {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 38px;
+        padding: 0px 100px;
+        margin-top: 30px;
+
+        .card-contain-1 {
+            margin-top: 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(/img/school1.png) center/cover no-repeat;
+            height: 60vh;
+            @include center;
+            color: white;
+            border-radius: 20px;
     
+
+            span {
+                font-size: 30px;
+                display: none;
+            }
+        }
+
+        .card-contain-2 {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(/img/school2.png) center/cover no-repeat;
+            height: 60vh;
+            @include center;
+            color: white;
+            margin-top: 20px;
+            border-radius: 20px;
+
+            span {
+                font-size: 30px;
+                display: none;
+            }
+        }
+
+        .card-contain-3 {
+            margin-top: 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(/img/school3.png) center/cover no-repeat;
+            height: 60vh;
+            @include center;
+            color: white;
+            border-radius: 20px;
+
+            span {
+                font-size: 30px;
+                display: none;
+            }
+        }
+
+        .card-contain-4 {
+            margin-top: 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(/img/school4.png) center/cover no-repeat;
+            height: 60vh;
+            @include center;
+            color: white;
+            border-radius: 20px;
+
+            span {
+                font-size: 30px;
+                display: none;
+            }
+        }
+
+        
+
+
+    }
+    // .card-contain-1:hover {
+    //         color: rgba(255, 166, 0, 0.071);
+    //         transform: translateY(-5px);
+    //         transition: 0.5s;
+    //     }
+
 }
