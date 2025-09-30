@@ -95,4 +95,16 @@ body {
   border-bottom: 4px solid #FF5722;
   border-radius: 2px;
   padding-bottom: 28px;
+}
+
+.header-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image25.png) center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .title {
+  color: #fff;
+  font-size: 40px;
 }/*# sourceMappingURL=blog.css.map */
