@@ -93,16 +93,18 @@ body {
     .search {
       display: flex;
       align-items: center;
-      padding: 8px 22px;
+      padding: 8px 30px;
       border-radius: 20px;
       border: none;
-      gap: 10px;
+      gap: 16px;
+      color: $gray-color;
     }
 
-    .bxs-graduation {
-      font-size: 48px;
-      color: $hover-color;
+    .material-icons, .bx-user{
+      font-size: 30px;
+      color: rgb(255, 166, 0);
     }
+   
   }
 }
 

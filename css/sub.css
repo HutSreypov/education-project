@@ -80,14 +80,15 @@ body {
 .navbar .donate-btn .search {
   display: flex;
   align-items: center;
-  padding: 8px 22px;
+  padding: 8px 30px;
   border-radius: 20px;
   border: none;
-  gap: 10px;
+  gap: 16px;
+  color: gray;
 }
-.navbar .donate-btn .bxs-graduation {
-  font-size: 48px;
-  color: orange;
+.navbar .donate-btn .material-icons, .navbar .donate-btn .bx-user {
+  font-size: 30px;
+  color: rgb(255, 166, 0);
 }
 
 #active {
