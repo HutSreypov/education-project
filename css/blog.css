@@ -122,7 +122,7 @@ body {
 
 .main-container .image img {
   width: 90%;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
 .main-container .table {
@@ -148,4 +148,204 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 8px 10px;
+}
+
+.section-container {
+  display: flex;
+  margin-top: 40px;
+}
+.section-container .text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  gap: 16px;
+}
+.section-container .form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.section-container .form .comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid gray;
+  width: 80%;
+  height: 60vh;
+  border-radius: 4px;
+  padding-top: 20px;
+}
+.section-container .form .comment input,
+.section-container .form .comment textarea {
+  padding: 16px;
+  border-radius: 4px;
+  width: 90%;
+  border: none;
+  background: rgba(128, 128, 128, 0.112);
+}
+.section-container .form .comment textarea {
+  height: 20vh;
+}
+.section-container .form .comment a {
+  background: rgba(0, 0, 255, 0.622);
+  padding: 6px 14px;
+  border-radius: 4px;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+.section-container .form .comment a:hover {
+  transform: translateY(-5px);
+  transition: 0.5s;
+  background: none;
+  border: 1px solid rgba(0, 0, 255, 0.622);
+  color: rgba(0, 0, 255, 0.622);
+}
+
+.last-section {
+  display: flex;
+  margin-top: 50px;
+}
+.last-section .images {
+  flex: 1;
+  padding-left: 100px;
+}
+.last-section .images img {
+  width: 80%;
+  border-radius: 4px;
+}
+.last-section .imge-text {
+  margin-top: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-right: 50px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(0, 0, 0, 0.87);
+  margin-top: 30px;
+  height: 50vh;
+  padding: 30px;
+  padding-left: 120px;
+  color: #fff;
+}
+.footer-container .link {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-container .link h1 {
+  font-size: 24px;
+}
+.footer-container .link .link-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  font-size: 16px;
+}
+.footer-container .link .link-1 a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-container .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-container .footer-contact h1 {
+  font-size: 24px;
+}
+.footer-container .footer-contact .contact-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-container .footer-contact .contact-footer .con-1 {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+}
+.footer-container .footer-contact .footer-icon {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+.footer-container .footer-contact .footer-icon i {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 30px;
+}
+.footer-container .footer-contact .footer-icon i:hover {
+  color: orange;
+  background: #fff;
+  transform: translateY(-5px);
+  transition: 0.5s;
+}
+.footer-container .uesful {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.footer-container .uesful h1 {
+  font-size: 24px;
+}
+.footer-container .uesful p {
+  font-size: 16px;
+}
+.footer-container .new {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-container .new h1 {
+  font-size: 22px;
+}
+.footer-container .new p {
+  font-size: 14px;
+}
+.footer-container .new input {
+  position: absolute;
+  padding: 16px;
+  width: 18%;
+  font-size: 16px;
+}
+.footer-container .new button {
+  position: absolute;
+  padding: 12px;
+  display: flex;
+  margin-left: 13.6%;
+  margin-top: 8px;
+  border: none;
+  background: rgba(0, 0, 255, 0.622);
+  color: #fff;
+}
+
+.lasr-footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last {
+  width: 85%;
+  padding: 20px;
+  border-top: 1px solid gray;
+  color: #fff;
+  text-align: center;
+}
+.last a {
+  color: #fff;
 }/*# sourceMappingURL=blog.css.map */
