@@ -226,4 +226,18 @@ body {
 .section-contain .card-contain .card-contain-4 span {
   font-size: 30px;
   display: none;
+}
+
+.next-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.next-section .first {
+  display: flex;
+  flex-direction: column;
+}
+.next-section .first img {
+  width: 30%;
 }/*# sourceMappingURL=courses.css.map */

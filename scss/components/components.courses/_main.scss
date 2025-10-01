@@ -70,7 +70,7 @@
             @include center;
             color: white;
             border-radius: 20px;
-    
+
 
             span {
                 font-size: 30px;
@@ -123,14 +123,29 @@
             }
         }
 
-        
+
 
 
     }
+
     // .card-contain-1:hover {
     //         color: rgba(255, 166, 0, 0.071);
     //         transform: translateY(-5px);
     //         transition: 0.5s;
     //     }
 
+}
+
+// ==========FIRST============
+.next-section {
+    @include center;
+    flex-direction: column;
+    .first {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 30%;
+        }
+    }
 }
