@@ -1,0 +1,33 @@
+.main-container {
+  display: flex;
+  margin-top: 40px;
+}
+.main-container .image {
+  flex: 1;
+  padding-left: 100px;
+}
+.main-container .image img {
+  width: 90%;
+  border-radius: 10px;
+}
+.main-container .table {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.main-container .table table {
+  width: 60%;
+  height: 76%;
+}
+.main-container .table table th {
+  border-collapse: collapse;
+  background: orange;
+  color: #fff;
+  padding: 8px;
+}
+.main-container .table table .td {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+}
