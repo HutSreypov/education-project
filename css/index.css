@@ -384,6 +384,9 @@ header {
   align-items: center;
   font-size: 20px;
 }
+.section-come .ful-come .topic a {
+  color: pink;
+}
 .section-come .ful-come .topic i {
   font-size: 24px;
 }
