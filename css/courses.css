@@ -161,72 +161,53 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
-  gap: 12px;
 }
-.section-contain .card-contain {
+.section-contain .container {
+  padding: 50px 0;
+}
+.section-contain .container .wrapper {
+  padding: 10px 10%;
+}
+.section-contain .container .card-aree {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  margin-top: 50px;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.section-contain .container .card-aree .card {
+  position: relative;
+  box-shadow: 5px 5px 15px rgbe(0, 0, 0, 0, 5);
+  overflow: hidden;
+}
+.section-contain .container .card-aree .card img {
   width: 100%;
-  gap: 38px;
-  padding: 0px 100px;
-  margin-top: 30px;
+  display: block;
+  border-radius: 10px;
 }
-.section-contain .card-contain .card-contain-1 {
-  margin-top: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school1.png) center/cover no-repeat;
-  height: 60vh;
+.section-contain .container .card-aree .card .overlay {
+  height: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.636) 60%);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  border-radius: 20px;
+  flex-direction: column;
+  padding: 0 50px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.2s;
+  overflow: hidden;
+  color: #fff;
 }
-.section-contain .card-contain .card-contain-1 span {
-  font-size: 30px;
-  display: none;
+.section-contain .container .card:hover img {
+  transform: scale(1.2);
 }
-.section-contain .card-contain .card-contain-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school2.png) center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-.section-contain .card-contain .card-contain-2 span {
-  font-size: 30px;
-  display: none;
-}
-.section-contain .card-contain .card-contain-3 {
-  margin-top: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school3.png) center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  border-radius: 20px;
-}
-.section-contain .card-contain .card-contain-3 span {
-  font-size: 30px;
-  display: none;
-}
-.section-contain .card-contain .card-contain-4 {
-  margin-top: 20px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/school4.png) center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  border-radius: 20px;
-}
-.section-contain .card-contain .card-contain-4 span {
-  font-size: 30px;
-  display: none;
+.section-contain .container .card:hover .overlay {
+  height: 80%;
 }
 
 .next-section {
