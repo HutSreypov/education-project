@@ -45,8 +45,6 @@
         }
     }
 }
-
-
 // ============SECTION-CONTAIN=============
 .section-contain {
     @include center;
@@ -101,7 +99,6 @@
                 }
             }
         }
-
         .card:hover img {
             transform: scale(1.2);
         }
@@ -111,11 +108,6 @@
         }
     }
 }
-
-
-
-
-
 // ==========FIRST============
 .next-section {
     @include center;
