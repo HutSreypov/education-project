@@ -161,6 +161,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 40px;
 }
 .section-contain .container {
   padding: 50px 0;
@@ -170,9 +171,9 @@ body {
 }
 .section-contain .container .card-aree {
   display: grid;
-  margin-top: 50px;
+  margin-top: 10px;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 .section-contain .container .card-aree .card {
   position: relative;
@@ -202,6 +203,10 @@ body {
   transition: height 0.2s;
   overflow: hidden;
   color: #fff;
+}
+.section-contain .container .card-aree .card .overlay p {
+  font-size: 22px;
+  line-height: 1.5;
 }
 .section-contain .container .card:hover img {
   transform: scale(1.2);
