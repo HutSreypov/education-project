@@ -424,11 +424,40 @@ header {
   transition: 0.5s;
 }
 
+.contant-section {
+  margin: 60px 100px;
+}
+.contant-section p {
+  font-size: 20px;
+}
+.contant-section p:hover {
+  border: 0.1px solid rgba(128, 128, 128, 0);
+}
+.contant-section span {
+  font-size: 22px;
+  color: orange;
+  line-height: 1.5;
+}
+.contant-section .imag-contect {
+  display: flex;
+  margin: 40px 0px;
+  gap: 40px;
+}
+.contant-section .imag-contect img {
+  width: 50%;
+  border-radius: 4px;
+}
+.contant-section .imag-contect .texts {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  gap: 20px;
+}
+
 .report {
   display: flex;
   align-items: center;
-  padding: 50px 110px;
-  margin-top: 32px;
+  padding: 30px 110px;
 }
 .report .report-text {
   display: flex;
@@ -439,6 +468,9 @@ header {
   text-align: start;
   width: 80%;
   padding-left: 44px;
+}
+.report .report-text p:hover {
+  border: 0.1px solid rgba(128, 128, 128, 0);
 }
 .report .report-text a {
   margin-left: 44px;

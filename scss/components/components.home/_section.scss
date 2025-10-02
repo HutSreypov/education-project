@@ -115,14 +115,44 @@
     }
 }
 
+// ===========CONTECT=============
 
+.contant-section{
+    margin: 60px 100px;
+    p{
+        font-size: 20px;
+    }
+    p:hover{
+        border: 0.1px solid rgba(128, 128, 128, 0);
+    }
+    span{
+        font-size: 22px;
+        color: $hover-color;
+        line-height: 1.5;
+    }
+    .imag-contect{
+        display: flex;
+        margin: 40px 0px;
+        gap: 40px;
+        img{
+            width: 50%;
+            border-radius: 4px;
+        }
+        .texts{
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            gap: 20px;
+        }
+    }
+
+}
 // ====REPORT=========
 
 .report {
     display: flex;
     align-items: center;
-    padding: 50px 110px;
-    margin-top: 32px;
+    padding: 30px 110px;
 
     .report-text {
         display: flex;
@@ -134,7 +164,9 @@
             width: 80%;
             padding-left: 44px;
         }
-
+        p:hover{
+            border: 0.1px solid rgba(128, 128, 128, 0);
+        }
         a {
             margin-left: 44px;
             text-decoration: none;
