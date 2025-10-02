@@ -196,6 +196,107 @@ hr {
   font-size: 18px;
 }
 
+@media (max-width: 1024px) {
+  main {
+    margin-left: 10%;
+  }
+  .header-container {
+    height: 60vh;
+  }
+  .header-container p {
+    font-size: 18px;
+  }
+  .header-container .title {
+    font-size: 32px;
+  }
+  .main-container span {
+    font-size: 28px;
+  }
+  .main-container .main-text .main-1 {
+    gap: 20px;
+  }
+  .main-container .main-text .main-1 span {
+    font-size: 40px;
+  }
+  .main-container .main-text .main-1 .text h3 {
+    font-size: 20px;
+  }
+  .main-container .main-text .main-1 .text p {
+    font-size: 18px;
+  }
+  .section-container span {
+    font-size: 28px;
+  }
+  .section-container .icon-1 {
+    gap: 30px;
+  }
+  .section-container .icon-1 .bx-bulb {
+    font-size: 44px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+    padding: 0 20px;
+  }
+  .header-container {
+    height: 50vh;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .header-container p {
+    font-size: 16px;
+  }
+  .header-container .title {
+    font-size: 26px;
+  }
+  .main-container {
+    margin-top: 20px;
+  }
+  .main-container span {
+    font-size: 24px;
+  }
+  .main-container .main-text .main-1 {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  }
+  .main-container .main-text .main-1 span {
+    font-size: 36px;
+  }
+  .main-container .main-text .main-1 .text h3 {
+    font-size: 18px;
+  }
+  .main-container .main-text .main-1 .text p {
+    font-size: 16px;
+  }
+  .section-container {
+    margin-top: 40px;
+  }
+  .section-container span {
+    font-size: 24px;
+  }
+  .section-container .icon-1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+  .section-container .icon-1 .bx-bulb {
+    font-size: 36px;
+  }
+  .section-container .icon-1 .icon-text h3 {
+    font-size: 18px;
+  }
+  .section-container .icon-1 .icon-text p {
+    font-size: 15px;
+  }
+  hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

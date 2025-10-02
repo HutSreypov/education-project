@@ -106,3 +106,130 @@ form {
     }
     
 }
+
+
+/* =================== RESPONSIVE CONTACT SECTION =================== */
+
+@media (max-width: 1024px) { // Tablet
+  .contact {
+    padding: 0 40px;
+
+    .section-title {
+      width: 40%;
+      font-size: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+
+  .main-container {
+    padding: 60px 20px;
+
+    .contact-1 {
+      flex-direction: column;
+      gap: 15px;
+
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .material-icons {
+        font-size: 22px;
+        padding: 8px;
+      }
+    }
+  }
+
+  .group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .get {
+      font-size: 20px;
+    }
+  }
+
+  form {
+    .name {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 18px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 18px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 768px) { // Mobile
+  .contact {
+    padding: 0 20px;
+
+    .section-title {
+      width: 70%;
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .main-container {
+    padding: 40px 10px;
+
+    .contact-1 {
+      flex-direction: column;
+      gap: 10px;
+
+      p {
+        font-size: 16px;
+      }
+
+      .material-icons {
+        font-size: 20px;
+        padding: 6px;
+      }
+    }
+  }
+
+  .group {
+    grid-template-columns: 1fr;
+    gap: 15px;
+
+    .get {
+      font-size: 18px;
+    }
+  }
+
+  form {
+    .name {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      font-size: 14px;
+    }
+
+    textarea {
+      padding: 30px;
+    }
+
+    button {
+      padding: 16px;
+      font-size: 14px;
+    }
+  }
+}

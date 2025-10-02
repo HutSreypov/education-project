@@ -719,4 +719,193 @@ header {
   padding: 18px;
   font-size: 14px;
   width: 100%;
+}
+
+/* =================== RESPONSIVE SECTIONS =================== */
+@media (max-width: 1024px) {
+  .section-come .ful-come {
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 50px;
+  }
+  .section-come .ful-come .come-1,
+  .section-come .ful-come .come-2 {
+    width: 100%;
+  }
+  .section-come .ful-come .skill {
+    width: 25%;
+  }
+  .section-come .ful-come p {
+    font-size: 22px;
+  }
+  .section-come .ful-come .topic {
+    font-size: 18px;
+  }
+  .main-contain {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .main-contain .cart-1 {
+    width: 28%;
+  }
+  .main-contain .cart-1 p {
+    font-size: 20px;
+  }
+  .main-contain .cart-1 span {
+    font-size: 14px;
+  }
+  .contant-section {
+    margin: 40px 30px;
+  }
+  .contant-section .imag-contect {
+    flex-direction: column;
+  }
+  .contant-section .imag-contect img {
+    width: 100%;
+  }
+  .contant-section p {
+    font-size: 18px;
+  }
+  .contant-section span {
+    font-size: 20px;
+  }
+  .report {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .report .report-text p {
+    width: 100%;
+    font-size: 24px;
+    padding-left: 0;
+  }
+  .report .report-text a {
+    width: 50%;
+    margin-left: 0;
+  }
+  .report img {
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+  }
+  .infor-eduspark .text-eduspark {
+    width: 90%;
+    margin-top: -80px;
+    font-size: 16px;
+  }
+  .section-container .section-contain {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .section-container .section-contain .sub-card {
+    width: 28%;
+    height: auto;
+  }
+  .career {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+  .career .career-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .career .carreer-text a {
+    width: 60%;
+  }
+  .feadback .student-say {
+    flex-direction: column;
+    gap: 20px;
+    animation: none;
+  }
+}
+@media (max-width: 768px) {
+  .section-come .ful-come {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    gap: 15px;
+  }
+  .section-come .ful-come .skill {
+    width: 100%;
+  }
+  .section-come .ful-come p {
+    font-size: 18px;
+  }
+  .section-come .ful-come .topic {
+    font-size: 16px;
+  }
+  .section-come .ful-come .topic i {
+    font-size: 20px;
+  }
+  .main-contain {
+    flex-direction: column;
+  }
+  .main-contain .cart-1 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .main-contain .cart-1 p {
+    font-size: 18px;
+  }
+  .main-contain .cart-1 span {
+    font-size: 14px;
+  }
+  .contant-section {
+    margin: 20px 15px;
+  }
+  .contant-section .imag-contect {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contant-section .imag-contect img {
+    width: 100%;
+  }
+  .contant-section p {
+    font-size: 16px;
+  }
+  .contant-section span {
+    font-size: 18px;
+  }
+  .report {
+    padding: 15px;
+  }
+  .report .report-text p {
+    font-size: 20px;
+    padding-left: 0;
+  }
+  .report .report-text a {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .report img {
+    width: 70%;
+    height: auto;
+    margin: 20px auto 0;
+  }
+  .infor-eduspark .text-eduspark {
+    width: 95%;
+    margin-top: -60px;
+    font-size: 14px;
+    padding: 15px;
+  }
+  .section-container .section-contain {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section-container .section-contain .sub-card {
+    width: 90%;
+    height: auto;
+  }
+  .career {
+    padding: 40px 15px;
+  }
+  .career .career-card {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .career .carreer-text a {
+    width: 100%;
+  }
+  .feadback .student-say {
+    flex-direction: column;
+    gap: 15px;
+    animation: none;
+  }
 }/*# sourceMappingURL=index.css.map */

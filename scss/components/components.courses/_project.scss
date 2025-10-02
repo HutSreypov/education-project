@@ -114,3 +114,141 @@ hr{
         }
     }
 }
+
+@media (max-width: 1024px) { // Tablet
+    main {
+        margin-left: 10%;
+    }
+
+    .header-container {
+        height: 60vh;
+
+        p {
+            font-size: 18px;
+        }
+
+        .title {
+            font-size: 32px;
+        }
+    }
+
+    .main-container {
+        span {
+            font-size: 28px;
+        }
+
+        .main-text .main-1 {
+            gap: 20px;
+
+            span {
+                font-size: 40px;
+            }
+
+            .text {
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .section-container {
+        span {
+            font-size: 28px;
+        }
+
+        .icon-1 {
+            gap: 30px;
+
+            .bx-bulb {
+                font-size: 44px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) { // Mobile
+    main {
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .header-container {
+        height: 50vh;
+        padding: 0 15px;
+        text-align: center;
+
+        p {
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 26px;
+        }
+    }
+
+    .main-container {
+        margin-top: 20px;
+
+        span {
+            font-size: 24px;
+        }
+
+        .main-text .main-1 {
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            gap: 20px;
+
+            span {
+                font-size: 36px;
+            }
+
+            .text {
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .section-container {
+        margin-top: 40px;
+
+        span {
+            font-size: 24px;
+        }
+
+        .icon-1 {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            width: 100%;
+
+            .bx-bulb {
+                font-size: 36px;
+            }
+
+            .icon-text {
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    hr {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
