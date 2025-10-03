@@ -57,9 +57,10 @@
 
         .section-icon {
             display: flex;
-            gap: 30px;
+            gap: 50px;
             .icon-1 {
-                @include center;
+                display: flex;
+                align-items: center;
                 gap: 10px;
                 i {
                     color: $hover-color;
