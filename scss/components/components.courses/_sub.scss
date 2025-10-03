@@ -1,68 +1,131 @@
 .header-container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/img/sub1.png) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.5)),
+        url(/img/topic1.png) center/cover no-repeat;
     height: 80vh;
+    // background: rgb(173, 212, 230);
     @include center;
     flex-direction: column;
+    padding: 0px 220px;
+    line-height: 1.5;
+    text-align: center;
 
     p {
         color: $white-color;
-        font-size: 22px;
-        text-align: center;
+        font-size: 18px;
+        padding-top: 10px;
+
     }
 
     .title {
         color: $white-color;
-        font-size: 40px;
+        font-size: 36px;
     }
 }
 
 // =========MAIN=========
-main {
-    margin-left: 22%;
-    margin-top: 30px;
 
-    .main-container {
-        margin-top: 40px;
+.top {
+    @include center;
+    margin-top: 60px;
+    gap: 30px;
 
-        span {
-            font-size: 34px;
+    .top-1 {
+        @include center;
+        flex-direction: column;
+        width: 40%;
+        box-shadow: 2px 2px 10px rgba(40, 39, 38, 0.251);
+        height: 20vh;
+        line-height: 1.5;
+        border-radius: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.426);
+
+        .icon-1 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: $hover-color;
+            }
+
+            i {
+                color: $hover-color;
+                font-size: 20px;
+            }
+
+            a:hover {
+                color: black;
+            }
         }
 
-        .main-text {
+    }
+}
+
+
+// ===========icon==========
+
+.section-container {
+    @include center;
+    flex-direction: column;
+    margin: 40px 130px;
+    line-height: 1.5;
+    .section-icon {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 60px;
+        width: 100%;
+        gap: 40px;
+        .icon-2{
             display: flex;
-            flex-direction: column;
-            gap: 60px;
-            margin-top: 20px;
+            align-items: center;
+            gap: 18px;
+            font-size: 18px;
+        }
+    }
+}
 
-            .main-1 {
-                display: flex;
-                gap: 40px;
-                align-items: center;
 
-                span {
-                    font-size: 50px;
-                    color: $hover-color;
-                }
 
-                .text {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
 
-                    h3 {
-                        font-size: 22px;
+
+
+// ==============UL==========
+.titles{
+    @include center;
+    flex-direction: column;
+    margin-top: 20px;
+    p{
+       font-size: 20px;
+    }
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    margin-left: 16%;
+    width: 100%;
+    margin-top: 20px;
+    .menu-column {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                margin: 0.4rem 0;
+                a {
+                    text-decoration: none;
+                    color: #555;
+                    font-size: 0.95rem;
+                    transition: color 0.2s ease;
+                    font-size: 17px;
+                    gap: 50%;
+                    &:hover {
+                        color: $topic-colors;
                     }
-
-                    p {
-                        font-size: 20px;
-                        color: $gray-color;
-                    }
                 }
-
             }
         }
     }
-
-
 }

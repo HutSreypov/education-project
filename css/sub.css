@@ -99,59 +99,122 @@ body {
 }
 
 .header-container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/sub1.png) center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.696), rgba(0, 0, 0, 0.5)), url(/img/topic1.png) center/cover no-repeat;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0px 220px;
+  line-height: 1.5;
+  text-align: center;
 }
 .header-container p {
   color: #fff;
-  font-size: 22px;
-  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
 }
 .header-container .title {
   color: #fff;
-  font-size: 40px;
+  font-size: 36px;
 }
 
-main {
-  margin-left: 22%;
-  margin-top: 30px;
-}
-main .main-container {
-  margin-top: 40px;
-}
-main .main-container span {
-  font-size: 34px;
-}
-main .main-container .main-text {
+.top {
   display: flex;
-  flex-direction: column;
-  gap: 60px;
-  margin-top: 20px;
-}
-main .main-container .main-text .main-1 {
-  display: flex;
-  gap: 40px;
+  justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  gap: 30px;
 }
-main .main-container .main-text .main-1 span {
-  font-size: 50px;
+.top .top-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  box-shadow: 2px 2px 10px rgba(40, 39, 38, 0.251);
+  height: 20vh;
+  line-height: 1.5;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.426);
+}
+.top .top-1 .icon-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
+}
+.top .top-1 .icon-1 a {
+  text-decoration: none;
   color: orange;
 }
-main .main-container .main-text .main-1 .text {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-main .main-container .main-text .main-1 .text h3 {
-  font-size: 22px;
-}
-main .main-container .main-text .main-1 .text p {
+.top .top-1 .icon-1 i {
+  color: orange;
   font-size: 20px;
-  color: gray;
+}
+.top .top-1 .icon-1 a:hover {
+  color: black;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 130px;
+  line-height: 1.5;
+}
+.section-container .section-icon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 60px;
+  width: 100%;
+  gap: 40px;
+}
+.section-container .section-icon .icon-2 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.titles p {
+  font-size: 20px;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+  margin-left: 16%;
+  width: 100%;
+  margin-top: 20px;
+}
+.menu .menu-column ul {
+  padding: 0;
+  margin: 0;
+}
+.menu .menu-column ul li {
+  margin: 0.4rem 0;
+}
+.menu .menu-column ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+  font-size: 17px;
+  gap: 50%;
+}
+.menu .menu-column ul li a:hover {
+  color: #007acc;
 }
 
 .footer-container {
