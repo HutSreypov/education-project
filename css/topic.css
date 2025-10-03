@@ -231,6 +231,14 @@ body {
   font-size: 40px;
 }
 
+marquee {
+  color: white;
+}
+marquee .p {
+  display: flex;
+  gap: 100px;
+}
+
 .menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

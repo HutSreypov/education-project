@@ -111,7 +111,11 @@ body {
 }
 
 marquee {
+  color: white;
+}
+marquee .p {
   display: flex;
+  gap: 100px;
 }
 
 .section-container {
@@ -256,6 +260,26 @@ marquee {
 .next-section .next-section-1 .first img:hover {
   transform: translateY(-8px);
   transition: 0.8s;
+}
+
+.slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+}
+.slideshow .language {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.slideshow .language img {
+  width: 10%;
+}
+.slideshow .language img .css {
+  width: 8%;
 }
 
 .footer-container {

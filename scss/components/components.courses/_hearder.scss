@@ -11,5 +11,9 @@
 }
 
 marquee{
-    display: flex;
+    color: white;
+    .p{
+          display: flex;
+          gap: 100px;
+    }
 }

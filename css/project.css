@@ -116,6 +116,14 @@ body {
   font-size: 40px;
 }
 
+marquee {
+  color: white;
+}
+marquee .p {
+  display: flex;
+  gap: 100px;
+}
+
 main {
   margin-left: 22%;
   margin-top: 30px;

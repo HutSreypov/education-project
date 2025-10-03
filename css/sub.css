@@ -119,6 +119,14 @@ body {
   font-size: 36px;
 }
 
+marquee {
+  color: white;
+}
+marquee .p {
+  display: flex;
+  gap: 100px;
+}
+
 .top {
   display: flex;
   justify-content: center;
