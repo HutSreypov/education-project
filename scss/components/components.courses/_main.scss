@@ -15,7 +15,6 @@
         gap: 40px;
         padding: 0px 140px;
         margin-top: 30px;
-
         .section-card-1 {
             display: flex;
             gap: 20px;
@@ -35,7 +34,7 @@
             }
 
             img {
-                width: 16%;
+                width: 10%;
             }
         }
 
@@ -45,6 +44,7 @@
         }
     }
 }
+
 // ============SECTION-CONTAIN=============
 .section-contain {
     @include center;
@@ -99,6 +99,7 @@
                 }
             }
         }
+
         .card:hover img {
             transform: scale(1.2);
         }
@@ -108,15 +109,18 @@
         }
     }
 }
+
 // ==========FIRST============
 .next-section {
     @include center;
     flex-direction: column;
-    margin-top: 24px;
+    margin: 20px 130px;
+    gap: 10px;
 
     .next-section-1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
 
         .first {
             display: flex;
@@ -127,12 +131,11 @@
             align-items: center;
 
             img {
-                width: 60%;
+                width: 100%;
                 border-radius: 10px;
             }
 
             .text {
-                width: 60%;
                 padding: 10px 0;
                 line-height: 1.5;
 
@@ -142,7 +145,14 @@
                     padding-top: 8px;
                 }
             }
+
+            img:hover {
+                // @include hovers;
+                transform: translateY(-8px);
+                transition: 0.8s;
+            }
         }
+
     }
 
 }
