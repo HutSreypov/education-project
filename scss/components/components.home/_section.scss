@@ -30,17 +30,11 @@
             display: flex;
             align-items: center;
             padding: 20px;
-
+            gap: 16px;
 
             img {
-                width: 26%;
+                width: 14%;
             }
-        }
-
-        .come-2 {
-            display: flex;
-            align-items: center;
-            gap: 20px;
         }
 
         .come-1:hover {
@@ -49,15 +43,9 @@
 
         }
 
-        .come-2:hover {
-            border-bottom: 2px solid $blue-color;
-            width: 80%;
-
-        }
-
-        .skill {
-            width: 14%;
-        }
+        // .skill {
+        //     width: 14%;
+        // }
 
         p {
             font-size: 26px;
@@ -481,259 +469,259 @@
 
 /* =================== RESPONSIVE SECTIONS =================== */
 
-@media (max-width: 1024px) {
+// @media (max-width: 1024px) {
 
-    // Tablet
-    .section-come {
-        .ful-come {
-            grid-template-columns: repeat(3, 1fr);
-            padding-left: 50px;
+//     // Tablet
+//     .section-come {
+//         .ful-come {
+//             grid-template-columns: repeat(3, 1fr);
+//             padding-left: 50px;
 
-            .come-1,
-            .come-2 {
-                width: 100%;
-            }
+//             .come-1,
+//             .come-2 {
+//                 width: 100%;
+//             }
 
-            .skill {
-                width: 25%;
-            }
+//             .skill {
+//                 width: 25%;
+//             }
 
-            p {
-                font-size: 22px;
-            }
+//             p {
+//                 font-size: 22px;
+//             }
 
-            .topic {
-                font-size: 18px;
-            }
-        }
-    }
+//             .topic {
+//                 font-size: 18px;
+//             }
+//         }
+//     }
 
-    .main-contain {
-        flex-wrap: wrap;
-        gap: 20px;
+//     .main-contain {
+//         flex-wrap: wrap;
+//         gap: 20px;
 
-        .cart-1 {
-            width: 28%;
+//         .cart-1 {
+//             width: 28%;
 
-            p {
-                font-size: 20px;
-            }
+//             p {
+//                 font-size: 20px;
+//             }
 
-            span {
-                font-size: 14px;
-            }
-        }
-    }
+//             span {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
 
-    .contant-section {
-        margin: 40px 30px;
+//     .contant-section {
+//         margin: 40px 30px;
 
-        .imag-contect {
-            flex-direction: column;
+//         .imag-contect {
+//             flex-direction: column;
 
-            img {
-                width: 100%;
-            }
-        }
+//             img {
+//                 width: 100%;
+//             }
+//         }
 
-        p {
-            font-size: 18px;
-        }
+//         p {
+//             font-size: 18px;
+//         }
 
-        span {
-            font-size: 20px;
-        }
-    }
+//         span {
+//             font-size: 20px;
+//         }
+//     }
 
-    .report {
-        flex-direction: column;
-        padding: 20px;
+//     .report {
+//         flex-direction: column;
+//         padding: 20px;
 
-        .report-text {
-            p {
-                width: 100%;
-                font-size: 24px;
-                padding-left: 0;
-            }
+//         .report-text {
+//             p {
+//                 width: 100%;
+//                 font-size: 24px;
+//                 padding-left: 0;
+//             }
 
-            a {
-                width: 50%;
-                margin-left: 0;
-            }
-        }
+//             a {
+//                 width: 50%;
+//                 margin-left: 0;
+//             }
+//         }
 
-        img {
-            width: 50%;
-            height: auto;
-            margin-top: 20px;
-        }
-    }
+//         img {
+//             width: 50%;
+//             height: auto;
+//             margin-top: 20px;
+//         }
+//     }
 
-    .infor-eduspark {
-        .text-eduspark {
-            width: 90%;
-            margin-top: -80px;
-            font-size: 16px;
-        }
-    }
+//     .infor-eduspark {
+//         .text-eduspark {
+//             width: 90%;
+//             margin-top: -80px;
+//             font-size: 16px;
+//         }
+//     }
 
-    .section-container {
-        .section-contain {
-            flex-wrap: wrap;
-            gap: 15px;
+//     .section-container {
+//         .section-contain {
+//             flex-wrap: wrap;
+//             gap: 15px;
 
-            .sub-card {
-                width: 28%;
-                height: auto;
-            }
-        }
-    }
+//             .sub-card {
+//                 width: 28%;
+//                 height: auto;
+//             }
+//         }
+//     }
 
-    .career {
-        flex-direction: column;
-        padding: 60px 20px;
+//     .career {
+//         flex-direction: column;
+//         padding: 60px 20px;
 
-        .career-card {
-            flex-direction: column;
-            gap: 20px;
-        }
+//         .career-card {
+//             flex-direction: column;
+//             gap: 20px;
+//         }
 
-        .carreer-text a {
-            width: 60%;
-        }
-    }
+//         .carreer-text a {
+//             width: 60%;
+//         }
+//     }
 
-    .feadback .student-say {
-        flex-direction: column;
-        gap: 20px;
-        animation: none; // disable scrolling on tablet
-    }
-}
+//     .feadback .student-say {
+//         flex-direction: column;
+//         gap: 20px;
+//         animation: none; // disable scrolling on tablet
+//     }
+// }
 
-@media (max-width: 768px) {
+// @media (max-width: 768px) {
 
-    // Mobile
-    .section-come {
-        .ful-come {
-            grid-template-columns: 1fr;
-            padding-left: 20px;
-            gap: 15px;
+//     // Mobile
+//     .section-come {
+//         .ful-come {
+//             grid-template-columns: 1fr;
+//             padding-left: 20px;
+//             gap: 15px;
 
-            .skill {
-                width: 100%;
-            }
+//             .skill {
+//                 width: 100%;
+//             }
 
-            p {
-                font-size: 18px;
-            }
+//             p {
+//                 font-size: 18px;
+//             }
 
-            .topic {
-                font-size: 16px;
+//             .topic {
+//                 font-size: 16px;
 
-                i {
-                    font-size: 20px;
-                }
-            }
-        }
-    }
+//                 i {
+//                     font-size: 20px;
+//                 }
+//             }
+//         }
+//     }
 
-    .main-contain {
-        flex-direction: column;
+//     .main-contain {
+//         flex-direction: column;
 
-        .cart-1 {
-            width: 100%;
-            margin-top: 20px;
+//         .cart-1 {
+//             width: 100%;
+//             margin-top: 20px;
 
-            p {
-                font-size: 18px;
-            }
+//             p {
+//                 font-size: 18px;
+//             }
 
-            span {
-                font-size: 14px;
-            }
-        }
-    }
+//             span {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
 
-    .contant-section {
-        margin: 20px 15px;
+//     .contant-section {
+//         margin: 20px 15px;
 
-        .imag-contect {
-            flex-direction: column;
-            gap: 20px;
+//         .imag-contect {
+//             flex-direction: column;
+//             gap: 20px;
 
-            img {
-                width: 100%;
-            }
-        }
+//             img {
+//                 width: 100%;
+//             }
+//         }
 
-        p {
-            font-size: 16px;
-        }
+//         p {
+//             font-size: 16px;
+//         }
 
-        span {
-            font-size: 18px;
-        }
-    }
+//         span {
+//             font-size: 18px;
+//         }
+//     }
 
-    .report {
-        padding: 15px;
+//     .report {
+//         padding: 15px;
 
-        .report-text {
-            p {
-                font-size: 20px;
-                padding-left: 0;
-            }
+//         .report-text {
+//             p {
+//                 font-size: 20px;
+//                 padding-left: 0;
+//             }
 
-            a {
-                width: 80%;
-                margin: 10px 0;
-            }
-        }
+//             a {
+//                 width: 80%;
+//                 margin: 10px 0;
+//             }
+//         }
 
-        img {
-            width: 70%;
-            height: auto;
-            margin: 20px auto 0;
-        }
-    }
+//         img {
+//             width: 70%;
+//             height: auto;
+//             margin: 20px auto 0;
+//         }
+//     }
 
-    .infor-eduspark {
-        .text-eduspark {
-            width: 95%;
-            margin-top: -60px;
-            font-size: 14px;
-            padding: 15px;
-        }
-    }
+//     .infor-eduspark {
+//         .text-eduspark {
+//             width: 95%;
+//             margin-top: -60px;
+//             font-size: 14px;
+//             padding: 15px;
+//         }
+//     }
 
-    .section-container {
-        .section-contain {
-            flex-direction: column;
-            gap: 15px;
+//     .section-container {
+//         .section-contain {
+//             flex-direction: column;
+//             gap: 15px;
 
-            .sub-card {
-                width: 90%;
-                height: auto;
-            }
-        }
-    }
+//             .sub-card {
+//                 width: 90%;
+//                 height: auto;
+//             }
+//         }
+//     }
 
-    .career {
-        padding: 40px 15px;
+//     .career {
+//         padding: 40px 15px;
 
-        .career-card {
-            flex-direction: column;
-            gap: 15px;
-        }
+//         .career-card {
+//             flex-direction: column;
+//             gap: 15px;
+//         }
 
-        .carreer-text a {
-            width: 100%;
-        }
-    }
+//         .carreer-text a {
+//             width: 100%;
+//         }
+//     }
 
-    .feadback .student-say {
-        flex-direction: column;
-        gap: 15px;
-        animation: none;
-    }
-}
+//     .feadback .student-say {
+//         flex-direction: column;
+//         gap: 15px;
+//         animation: none;
+//     }
+// }
