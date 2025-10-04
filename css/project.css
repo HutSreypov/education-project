@@ -424,4 +424,43 @@ hr {
 }
 .last a {
   color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(0, 0, 0, 0.87);
+  margin-top: 30px;
+  height: auto;
+  padding: 30px 120px;
+  color: #fff;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .footer-container {
+    padding: 20px 40px;
+  }
+  .footer-container .link h1,
+  .footer-container .footer-contact h1,
+  .footer-container .uesful h1,
+  .footer-container .new h1 {
+    font-size: 18px;
+  }
+  .footer-container p {
+    font-size: 14px;
+  }
+  .footer-container a {
+    font-size: 14px;
+  }
+  .footer-container .new input {
+    width: 16%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .footer-container .new button {
+    margin-left: 11%;
+    margin-top: 5px;
+    padding: 6px;
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=project.css.map */

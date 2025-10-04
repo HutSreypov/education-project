@@ -125,4 +125,46 @@
 
 
 
-    
+
+    // ============responsive==========
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background: $dropdown-text-color;
+    margin-top: 30px;
+    height: auto;
+    padding: 30px 120px;
+    color: $white-color;
+    gap: 20px;
+
+    // Tablet
+    @media (max-width: 992px) {
+        padding: 20px 40px;
+        .link h1,
+        .footer-contact h1,
+        .uesful h1,
+        .new h1 {
+            font-size: 18px;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+        }
+        .new input {
+            width: 16%;
+            padding: 8px;
+            font-size: 12px;
+        }
+        .new button {
+            margin-left:11%;
+            margin-top: 5px;
+            padding: 6px;
+            font-size: 10px;
+        }
+    }
+}
+
+
+ 
