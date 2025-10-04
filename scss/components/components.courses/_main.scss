@@ -168,14 +168,28 @@
 
     .language {
         display: flex;
-        gap: 30px;
+        gap: 40px;
         margin-top: 30px;
         img {
-            width: 10%;
-            .css{
-                width: 8%;
-            }
+            width: 8%;
         }
-
+        .html{
+            height: 16.5vh;
+            width: 14%;
+            margin-top: 14px;
+        }
+        .css{
+            height: 16.5vh;
+            margin-top: 14px;
+        }
+        .js{
+            width: 10%;
+        }
+        .pythone{
+            width: 10%;
+        }
+        .cc{
+            width: 7%;
+        }
     }
 }

@@ -119,9 +119,8 @@ body {
     gap: 16px;
   }
   .navbar .donate-btn .search {
-    padding: 6px 50px;
+    padding: 6px 20px;
     font-size: 14px;
-    width: 40%;
   }
   .navbar .donate-btn .material-icons,
   .navbar .donate-btn .bx-user {
@@ -252,7 +251,7 @@ form button {
 /* =================== RESPONSIVE CONTACT SECTION =================== */
 @media (max-width: 1024px) {
   .contact {
-    padding: 0 40px;
+    padding: 0 20px;
   }
   .contact .section-title {
     width: 40%;
@@ -277,11 +276,8 @@ form button {
     padding: 8px;
   }
   .group {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .group .get {
-    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
   form .name {
     flex-direction: column;

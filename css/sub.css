@@ -119,9 +119,8 @@ body {
     gap: 16px;
   }
   .navbar .donate-btn .search {
-    padding: 6px 50px;
+    padding: 6px 20px;
     font-size: 14px;
-    width: 40%;
   }
   .navbar .donate-btn .material-icons,
   .navbar .donate-btn .bx-user {

@@ -119,9 +119,8 @@ body {
     gap: 16px;
   }
   .navbar .donate-btn .search {
-    padding: 6px 50px;
+    padding: 6px 20px;
     font-size: 14px;
-    width: 40%;
   }
   .navbar .donate-btn .material-icons,
   .navbar .donate-btn .bx-user {
@@ -302,14 +301,29 @@ marquee .p {
 }
 .slideshow .language {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   margin-top: 30px;
 }
 .slideshow .language img {
+  width: 8%;
+}
+.slideshow .language .html {
+  height: 16.5vh;
+  width: 14%;
+  margin-top: 14px;
+}
+.slideshow .language .css {
+  height: 16.5vh;
+  margin-top: 14px;
+}
+.slideshow .language .js {
   width: 10%;
 }
-.slideshow .language img .css {
-  width: 8%;
+.slideshow .language .pythone {
+  width: 10%;
+}
+.slideshow .language .cc {
+  width: 7%;
 }
 
 .footer-container {

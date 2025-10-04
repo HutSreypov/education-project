@@ -112,7 +112,7 @@ form {
 
 @media (max-width: 1024px) { // Tablet
   .contact {
-    padding: 0 40px;
+    padding: 0 20px;
 
     .section-title {
       width: 40%;
@@ -144,12 +144,14 @@ form {
   }
 
   .group {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
 
-    .get {
-      font-size: 20px;
-    }
+   display: flex;
+   flex-wrap: wrap-reverse;
+    // gap: 20px;
+
+    // .get {
+    //   font-size: 20px;
+    // }
   }
 
   form {
