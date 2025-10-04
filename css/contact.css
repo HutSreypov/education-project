@@ -86,9 +86,10 @@ body {
   gap: 16px;
   color: gray;
 }
-.navbar .donate-btn .material-icons, .navbar .donate-btn .bx-user {
+.navbar .donate-btn .material-icons,
+.navbar .donate-btn .bx-user {
   font-size: 30px;
-  color: rgb(255, 166, 0);
+  color: #FF5722;
 }
 
 #active {
@@ -98,6 +99,34 @@ body {
   padding-bottom: 28px;
 }
 
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+  .navbar .logo {
+    gap: 10px;
+  }
+  .navbar .logo h1 {
+    font-size: 18px;
+  }
+  .navbar .logo .logo-img {
+    width: 19%;
+  }
+  .navbar .nav-links li a {
+    font-size: 16px;
+  }
+  .navbar .donate-btn {
+    gap: 16px;
+  }
+  .navbar .donate-btn .search {
+    padding: 6px 20px;
+    font-size: 14px;
+  }
+  .navbar .donate-btn .material-icons,
+  .navbar .donate-btn .bx-user {
+    font-size: 26px;
+  }
+}
 .header-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image14.png) center/cover no-repeat;
   height: 80vh;
@@ -472,5 +501,83 @@ form button {
     margin-top: 5px;
     padding: 6px;
     font-size: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    height: auto;
+    text-align: left;
+  }
+  .footer-container .link,
+  .footer-container .footer-contact,
+  .footer-container .uesful,
+  .footer-container .new {
+    gap: 8px;
+  }
+  .footer-container .link h1,
+  .footer-container .footer-contact h1,
+  .footer-container .uesful h1,
+  .footer-container .new h1 {
+    font-size: 16px;
+  }
+  .footer-container .link .link-1 {
+    font-size: 12px;
+  }
+  .footer-container .uesful p,
+  .footer-container .footer-contact .con-1 {
+    font-size: 12px;
+  }
+  .footer-container .uesful p i,
+  .footer-container .footer-contact .con-1 i {
+    font-size: 14px;
+  }
+  .footer-container .footer-icon i {
+    font-size: 12px;
+  }
+  .footer-container .new {
+    position: relative;
+  }
+  .footer-container .new input {
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+  .footer-container .new button {
+    position: relative;
+    margin: 10px 0 0;
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.lasr-footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lasr-footer .last {
+  width: 95%;
+  padding: 15px;
+  border-top: 1px solid gray;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+.lasr-footer .last a {
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .lasr-footer .last {
+    font-size: 12px;
+    padding: 10px;
   }
 }/*# sourceMappingURL=contact.css.map */

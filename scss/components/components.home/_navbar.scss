@@ -28,9 +28,11 @@ body {
     span {
       color: $accent-color ;
     }
-    h1{
+
+    h1 {
       font-size: 28px;
     }
+
     .logo-img {
       width: 14%;
     }
@@ -100,11 +102,12 @@ body {
       color: $gray-color;
     }
 
-    .material-icons, .bx-user{
+    .material-icons,
+    .bx-user {
       font-size: 30px;
-      color: rgb(255, 166, 0);
+      color: $accent-color;
     }
-   
+
   }
 }
 
@@ -115,4 +118,80 @@ body {
   padding-bottom: 28px;
 }
 
+
+
+
+// =======responsive===========
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 10px 15px;
+
+    .logo {
+      gap: 10px;
+      h1 {
+        font-size: 18px;
+      }
+
+      .logo-img {
+        width: 19%;
+      }
+    }
+
+    .nav-links li a {
+      font-size: 16px;
+    }
+
+    .donate-btn {
+      gap: 16px;
+
+      .search {
+        padding: 6px 20px;
+        font-size: 14px;
+      }
+
+      .material-icons,
+      .bx-user {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+
+// ======phone============
+// @media (max-width: 798px) {
+//   .navbar {
+//     padding: 10px 15px;
+
+//     .logo {
+//       gap: 10px;
+//       h1 {
+//         font-size: 18px;
+//       }
+
+//       .logo-img {
+//         width: 19%;
+//       }
+//     }
+
+//     .nav-links li a {
+//       font-size: 16px;
+//     }
+
+//     .donate-btn {
+//       gap: 16px;
+
+//       .search {
+//         padding: 6px 20px;
+//         font-size: 14px;
+//       }
+
+//       .material-icons,
+//       .bx-user {
+//         font-size: 26px;
+//       }
+//     }
+//   }
+// }
 

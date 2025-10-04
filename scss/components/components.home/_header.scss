@@ -2,7 +2,6 @@
       position: relative;
       height: 80vh;
   }
-
   .content {
       width: 100%;
       height: 90vh;
@@ -102,3 +101,52 @@
           transform: translateX(0);
       }
   }
+
+//   ===============responsive===============
+@media (max-width: 992px) {
+  header {
+    height: 46vh;
+    .content{
+        p{
+            width: 80%;
+        }
+    }
+  }
+
+}
+
+// ==========phone==========
+
+
+@media (max-width: 768px) {
+  header {
+    height: 60vh;
+  }
+
+  .content {
+    line-height: 1.5;
+    h1 {
+      font-size: 22px;
+    }
+    span {
+      font-size: 14px;
+    }
+    p {
+      display: none;
+    }
+
+    .bnt-top {
+      gap: 12px;
+      width: 60%;
+
+      a,
+      .join-now {
+        width: 100%;
+        text-align: center;
+        padding: 6px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
