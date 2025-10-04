@@ -10,13 +10,15 @@
     }
 }
 
-marquee{
+marquee {
     color: white;
-    .p{
-          display: flex;
-          gap: 100px;
+
+    .p {
+        display: flex;
+        gap: 100px;
     }
 }
+
 // =========MAIN=============
 
 .menu {
@@ -25,6 +27,7 @@ marquee{
     gap: 2rem;
     padding: 2rem;
     margin-left: 10%;
+
     .menu-column {
         h3 {
             font-size: 1.4rem;
@@ -40,12 +43,14 @@ marquee{
 
             li {
                 margin: 0.4rem 0;
+
                 a {
                     text-decoration: none;
                     color: #555;
                     font-size: 0.95rem;
                     transition: color 0.2s ease;
                     font-size: 17px;
+
                     &:hover {
                         color: $topic-colors;
                     }
@@ -55,5 +60,63 @@ marquee{
     }
 }
 
-// ==========RESPONSIVE============
 
+/* =================== RESPONSIVE SECTIONS ==================================================== */
+
+@media (max-width: 992px) {
+    .header-container {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        height: 40vh;
+    }
+
+    .title {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+
+// =======MENU===========
+
+@media (max-width: 992px) {
+    .menu {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 5%;
+        gap: 1.5rem;
+
+        .menu-column {
+            h3 {
+                font-size: 1.2rem;
+            }
+
+            ul li a {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 0;
+        padding: 1rem;
+        gap: 1rem;
+        margin-left: 10px;
+        .menu-column {
+            h3 {
+                font-size: 1rem;
+            }
+
+            ul li a {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+}
