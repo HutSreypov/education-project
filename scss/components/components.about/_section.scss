@@ -188,8 +188,181 @@
 
 // ============RESPONSIVE============================================
 
+
 @media (max-width: 992px) {
-    .section-container{
+    .section-container {
         height: 50vh;
+        flex-direction: column-reverse;
+
+        img {
+            width: 0%;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .section-container {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+
+        .none {
+            display: none;
+        }
+
+        img {
+            width: 80%;
+        }
+
+        .section-text {
+            padding: 10px;
+            text-align: center;
+
+            h1 {
+                font-size: 28px;
+
+            }
+
+            span {
+                font-size: 14px;
+                display: none;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            a {
+                font-size: 12px;
+                padding: 8px 12px;
+            }
+
+            .section-icon {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    }
+}
+
+// =================SECTION================
+
+@media (max-width: 992px) {
+    .section-containers {
+        text-align: center;
+        margin-top: 40px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .section-contain {
+            display: flex;
+            justify-content: center;
+            margin-top: 36px;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .sub-card {
+                background: $card-color;
+                width: 12%;
+                height: 30vh;
+                @include center;
+                gap: 20px;
+                flex-direction: column;
+                border: 1px solid $hover-colors;
+                transition: 0.3s;
+
+                img {
+                    width: 40%;
+                }
+
+                span {
+                    color: $gray-color;
+                }
+
+                &:hover {
+                    background: $hover-colors;
+                    transform: translateY(-5px);
+                    border: none;
+                }
+            }
+        }
+
+        /* Tablet */
+        @media (max-width: 992px) {
+            .section-contain {
+                gap: 16px;
+
+                .sub-card {
+                    width: 25%; // 4 cards per row
+                    height: 18vh;
+                }
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 22px;
+            }
+
+            .section-contain {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                flex-direction: column;
+                gap: 12px;
+                margin-left: 20px;
+
+                .sub-card {
+                    width: 90%; // full width card
+                    height: auto;
+                    padding: 16px;
+
+                    img {
+                        width: 30%;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// ======infor-expert===============
+
+@media (max-width: 992px) {
+    .infor-expert {
+        .expert {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
+            .expert-1 {
+                height: 50vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .infor-expert {
+        .expert {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            padding-left: 40px;
+            .expert-1 {
+                height: 58vh;
+                width: 90%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }
