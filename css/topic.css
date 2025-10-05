@@ -329,13 +329,6 @@ body {
   color: #FF5722;
 }
 
-#active {
-  color: #FF5722;
-  border-bottom: 4px solid #FF5722;
-  border-radius: 2px;
-  padding-bottom: 28px;
-}
-
 @media (max-width: 992px) {
   .navbar {
     padding: 10px 15px;
