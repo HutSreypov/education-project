@@ -1,4 +1,3 @@
-
 .contact {
     @include center;
     flex-direction: column;
@@ -128,18 +127,33 @@ form {
     padding: 60px 20px;
 
     .contact-1 {
-      flex-direction: column;
-      gap: 15px;
+      // align-items: self-start;
+      display: grid;
+      grid-template-columns:1fr 20fr;
+      gap: 30px;
+      align-items: center;
+      .contact-text{
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+
+      }
 
       p {
         font-size: 18px;
         text-align: center;
       }
 
-      .material-icons {
-        font-size: 22px;
-        padding: 8px;
-      }
+      
+        // .material-icons {
+        //     background: $hover-color;
+        //     color: $white-color;
+        //     padding: 10px;
+        //     border-radius: 4px;
+        //     font-size: 26px;
+        //     width: 10%;
+        // }
+      
     }
   }
 
@@ -153,8 +167,16 @@ form {
     //   font-size: 20px;
     // }
   }
+.map{
+  width: 100%;
+  iframe{
+    width: 100%;
+  }
 
+}
   form {
+    margin: 0px 30px;
+    flex: 1;
     .name {
       flex-direction: column;
       gap: 15px;
@@ -166,8 +188,10 @@ form {
     }
 
     button {
+      width: 20%;
       padding: 18px;
       font-size: 16px;
+      align-self: flex-end;
     }
   }
 }
@@ -175,15 +199,13 @@ form {
 @media (max-width: 768px) { // Mobile
   .contact {
     padding: 0 20px;
+    h2{
+      font-size: 20px;
+    }
 
     .section-title {
       width: 70%;
-      font-size: 18px;
-    }
-
-    h2 {
-      font-size: 24px;
-      text-align: center;
+      font-size: 15px;
     }
   }
 
@@ -210,28 +232,42 @@ form {
     gap: 15px;
 
     .get {
-      font-size: 18px;
+      font-size: 20px;
+    }
+    span{
+      font-size: small;
     }
   }
+.map{
+  width: 100%;
 
-  form {
+  iframe{
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+
+}
+   form {
+    margin: 0px 10px;
+    flex: 1;
     .name {
       flex-direction: column;
-      gap: 10px;
+      gap: 15px;
     }
 
     input, textarea {
-      padding: 14px;
-      font-size: 14px;
-    }
-
-    textarea {
-      padding: 30px;
+      padding: 15px;
+      font-size: 16px;
     }
 
     button {
-      padding: 16px;
-      font-size: 14px;
+      width: 35%;
+      padding: 10px;
+      font-size: small;
+      align-self: flex-end;
     }
   }
-}
+
+

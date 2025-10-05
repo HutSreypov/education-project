@@ -8,12 +8,65 @@
         color: $white-color;
         font-size: 40px;
     }
+
+    .header-container {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url(/img/image14.png) center/cover no-repeat;
+        height: 60vh;
+        @include center;
+
+        .title {
+            color: $white-color;
+            font-size: 40px;
+        }
+    }
+
+    marquee {
+        color: white;
+
+        .p {
+            display: flex;
+            gap: 100px;
+        }
+    }
+
 }
 
-marquee{
+marquee {
     color: white;
-    .p{
-          display: flex;
-          gap: 100px;
+
+    .p {
+        display: flex;
+        gap: 100px;
     }
 }
+
+
+// ============RESPONSIVE============================================
+
+@media (max-width: 992px) {
+  .header-container {
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    height: 40vh;
+
+    .title {
+      font-size: 26px;
+    }
+  }
+
+
+
+
+}
+

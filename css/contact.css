@@ -127,6 +127,52 @@ body {
     font-size: 26px;
   }
 }
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0px;
+  }
+  .navbar .logo {
+    flex: 1;
+    padding: 5px 5px 0px 10px;
+  }
+  .navbar .logo span {
+    color: #FF5722;
+  }
+  .navbar .logo h1 {
+    display: none;
+  }
+  .navbar .logo .logo-img {
+    width: 90%;
+  }
+  .navbar .nav-links {
+    flex: 6;
+    list-style-type: none;
+    display: flex;
+  }
+  .navbar .nav-links li {
+    margin-right: 5px;
+  }
+  .navbar .nav-links li a {
+    font-size: 11px;
+    padding: 5px;
+  }
+  .navbar .donate-btn {
+    margin-right: 10px;
+    gap: 5px;
+  }
+  .navbar .donate-btn .search {
+    display: none;
+  }
+  .navbar .donate-btn .material-icons,
+  .navbar .donate-btn .bx-user {
+    font-size: 20px;
+  }
+  #active {
+    border-bottom: 2px solid #FF5722;
+    border-radius: 2px;
+    padding-bottom: 13px;
+  }
+}
 .header-container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image14.png) center/cover no-repeat;
   height: 80vh;
@@ -138,6 +184,24 @@ body {
   color: #fff;
   font-size: 40px;
 }
+.header-container .header-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/image14.png) center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container .header-container .title {
+  color: #fff;
+  font-size: 40px;
+}
+.header-container marquee {
+  color: white;
+}
+.header-container marquee .p {
+  display: flex;
+  gap: 100px;
+}
 
 marquee {
   color: white;
@@ -147,6 +211,24 @@ marquee .p {
   gap: 100px;
 }
 
+@media (max-width: 992px) {
+  .header-container {
+    height: 30vh;
+  }
+  .title {
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .header-container {
+    height: 40vh;
+  }
+  .header-container .title {
+    font-size: 26px;
+  }
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -264,20 +346,33 @@ form button {
     padding: 60px 20px;
   }
   .main-container .contact-1 {
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    gap: 30px;
+    align-items: center;
+  }
+  .main-container .contact-1 .contact-text {
+    display: flex;
     flex-direction: column;
-    gap: 15px;
+    align-items: self-start;
   }
   .main-container .contact-1 p {
     font-size: 18px;
     text-align: center;
   }
-  .main-container .contact-1 .material-icons {
-    font-size: 22px;
-    padding: 8px;
-  }
   .group {
     display: flex;
     flex-wrap: wrap-reverse;
+  }
+  .map {
+    width: 100%;
+  }
+  .map iframe {
+    width: 100%;
+  }
+  form {
+    margin: 0px 30px;
+    flex: 1;
   }
   form .name {
     flex-direction: column;
@@ -288,21 +383,22 @@ form button {
     font-size: 16px;
   }
   form button {
+    width: 20%;
     padding: 18px;
     font-size: 16px;
+    align-self: flex-end;
   }
 }
 @media (max-width: 768px) {
   .contact {
     padding: 0 20px;
   }
+  .contact h2 {
+    font-size: 20px;
+  }
   .contact .section-title {
     width: 70%;
-    font-size: 18px;
-  }
-  .contact h2 {
-    font-size: 24px;
-    text-align: center;
+    font-size: 15px;
   }
   .main-container {
     padding: 40px 10px;
@@ -323,24 +419,38 @@ form button {
     gap: 15px;
   }
   .group .get {
-    font-size: 18px;
+    font-size: 20px;
   }
-  form .name {
-    flex-direction: column;
-    gap: 10px;
+  .group span {
+    font-size: small;
   }
-  form input, form textarea {
-    padding: 14px;
-    font-size: 14px;
+  .map {
+    width: 100%;
   }
-  form textarea {
-    padding: 30px;
-  }
-  form button {
-    padding: 16px;
-    font-size: 14px;
+  .map iframe {
+    width: 100%;
+    height: 40vh;
   }
 }
+form {
+  margin: 0px 10px;
+  flex: 1;
+}
+form .name {
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 15px;
+  font-size: 16px;
+}
+form button {
+  width: 35%;
+  padding: 10px;
+  font-size: small;
+  align-self: flex-end;
+}
+
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

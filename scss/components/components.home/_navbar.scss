@@ -158,38 +158,69 @@ body {
 
 
 // ======phone============
-// @media (max-width: 798px) {
-//   .navbar {
-//     padding: 10px 15px;
+@media (max-width: 767px) {
 
-//     .logo {
-//       gap: 10px;
-//       h1 {
-//         font-size: 18px;
-//       }
+// Navbar Styles
+.navbar {
 
-//       .logo-img {
-//         width: 19%;
-//       }
-//     }
+  padding: 0px;
 
-//     .nav-links li a {
-//       font-size: 16px;
-//     }
+  .logo {
+    flex: 1;
+    padding: 5px 5px 0px 10px;
 
-//     .donate-btn {
-//       gap: 16px;
+    span {
+      color: $accent-color ;
+    }
 
-//       .search {
-//         padding: 6px 20px;
-//         font-size: 14px;
-//       }
+    h1 {
+      display: none;
+    }
 
-//       .material-icons,
-//       .bx-user {
-//         font-size: 26px;
-//       }
-//     }
-//   }
-// }
+    .logo-img {
+      width: 90%;
+    }
+  }
+
+  .nav-links {
+    flex: 6;
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin-right: 5px;
+
+      a {
+        
+        font-size: 11px;
+        padding: 5px;
+      }
+    }
+  }
+
+  // Donate Button
+  .donate-btn {
+    margin-right: 10px;
+gap: 5px;
+    .search {
+      display: none;
+      
+    }
+
+    .material-icons,
+      .bx-user {
+        font-size: 20px;
+      }
+
+  }
+}
+
+#active {
+ 
+  border-bottom: 2px solid $accent-color;
+  border-radius: 2px;
+  padding-bottom: 13px;
+}
+}
+
 
