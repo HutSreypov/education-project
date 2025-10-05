@@ -96,7 +96,7 @@ body {
   color: #FF5722;
   border-bottom: 4px solid #FF5722;
   border-radius: 2px;
-  padding-bottom: 28px;
+  padding-bottom: 30px;
 }
 
 @media (max-width: 992px) {
@@ -126,14 +126,13 @@ body {
   .navbar .donate-btn .bx-user {
     font-size: 26px;
   }
+  #active {
+    color: #FF5722;
+    border-bottom: 4px solid #FF5722;
+    border-radius: 2px;
+    padding-bottom: 14px;
+  }
 }
-#active {
-  color: #FF5722;
-  border-bottom: 4px solid #FF5722;
-  border-radius: 2px;
-  padding-bottom: 14px;
-}
-
 @media (max-width: 767px) {
   .navbar {
     padding: 0px;

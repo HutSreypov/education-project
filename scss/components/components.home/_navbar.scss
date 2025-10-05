@@ -154,14 +154,15 @@ body {
       }
     }
   }
-}
-
-#active {
+  #active {
   color: $accent-color;
   border-bottom: 4px solid $accent-color;
   border-radius: 2px;
   padding-bottom: 14px;
 }
+}
+
+
 
 // ======phone============
 @media (max-width: 767px) {

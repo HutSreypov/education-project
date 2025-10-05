@@ -126,14 +126,13 @@ body {
   .navbar .donate-btn .bx-user {
     font-size: 26px;
   }
+  #active {
+    color: #FF5722;
+    border-bottom: 4px solid #FF5722;
+    border-radius: 2px;
+    padding-bottom: 14px;
+  }
 }
-#active {
-  color: #FF5722;
-  border-bottom: 4px solid #FF5722;
-  border-radius: 2px;
-  padding-bottom: 14px;
-}
-
 @media (max-width: 767px) {
   .navbar {
     padding: 0px;
@@ -385,12 +384,13 @@ form button {
     flex-direction: column;
     gap: 15px;
   }
-  form input, form textarea {
+  form input,
+  form textarea {
     padding: 18px;
     font-size: 16px;
   }
   form button {
-    width: 20%;
+    width: 22%;
     padding: 18px;
     font-size: 16px;
     align-self: flex-end;
@@ -438,26 +438,26 @@ form button {
     width: 100%;
     height: 40vh;
   }
+  form {
+    margin: 0px 10px;
+    flex: 1;
+  }
+  form .name {
+    flex-direction: column;
+    gap: 15px;
+  }
+  form input,
+  form textarea {
+    padding: 15px;
+    font-size: 16px;
+  }
+  form button {
+    width: 35%;
+    padding: 10px;
+    font-size: small;
+    align-self: flex-end;
+  }
 }
-form {
-  margin: 0px 10px;
-  flex: 1;
-}
-form .name {
-  flex-direction: column;
-  gap: 15px;
-}
-form input, form textarea {
-  padding: 15px;
-  font-size: 16px;
-}
-form button {
-  width: 35%;
-  padding: 10px;
-  font-size: small;
-  align-self: flex-end;
-}
-
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
