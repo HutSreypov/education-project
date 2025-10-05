@@ -10,10 +10,33 @@
     }
 }
 
-marquee{
+marquee {
     color: white;
-    .p{
-          display: flex;
-          gap: 100px;
+
+    .p {
+        display: flex;
+        gap: 100px;
     }
+}
+
+// ============RESPONSIVE============================================
+
+@media (max-width: 992px) {
+    .header-container {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        height: 40vh;
+
+        .title {
+            font-size: 28px;
+           
+        }
+        
+    }
+
+
 }

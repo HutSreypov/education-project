@@ -194,20 +194,19 @@
     position: relative;
   }
   .footer-container .new input {
-    position: relative;
     width: 100%;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
   }
   .footer-container .new button {
-    position: relative;
     margin: 10px 0 0;
     width: 100%;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
 }
 

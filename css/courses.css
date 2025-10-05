@@ -147,6 +147,19 @@ marquee .p {
   gap: 100px;
 }
 
+@media (max-width: 992px) {
+  .header-container {
+    height: 30vh;
+  }
+}
+@media (max-width: 576px) {
+  .header-container {
+    height: 40vh;
+  }
+  .header-container .title {
+    font-size: 28px;
+  }
+}
 .section-container {
   display: flex;
   justify-content: center;
@@ -326,6 +339,191 @@ marquee .p {
   width: 7%;
 }
 
+@media (max-width: 992px) {
+  .card .overlay {
+    padding: 0 30px;
+  }
+  .card .overlay p {
+    font-size: 18px;
+  }
+  .section-container span {
+    color: orange;
+    font-size: 18px;
+  }
+  .section-container .secction-card {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 0px 40px;
+  }
+  .section-container .secction-card .section-card-1 {
+    gap: 20px;
+  }
+  .section-contain .container {
+    padding: 30px 0;
+  }
+  .section-contain .container .wrapper {
+    padding: 10px 5%;
+  }
+  .section-contain .container .card-aree {
+    display: grid;
+    margin-top: 10px;
+    grid-gap: 10px;
+  }
+  .next-section {
+    margin: 20px 30px;
+    gap: 10px;
+  }
+  .next-section .next-section-1 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+  .next-section .next-section-1 .first {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .next-section .next-section-1 .first img {
+    width: 40%;
+  }
+  .slideshow .language img {
+    width: 5%;
+  }
+  .slideshow .language .html {
+    height: 8vh;
+    width: 10%;
+    margin-top: 14px;
+  }
+  .slideshow .language .css {
+    height: 10%;
+    width: 10%;
+    margin-top: 5%;
+  }
+  .slideshow .language .js {
+    margin-top: 18px;
+  }
+  .slideshow .language .pythone {
+    width: 15%;
+    height: 15%;
+  }
+  .slideshow .language .cc {
+    width: 10%;
+    height: 10%;
+    margin-top: 4%;
+  }
+}
+@media (max-width: 767px) {
+  .card .overlay {
+    padding: 0 30px;
+  }
+  .card .overlay p {
+    font-size: 12px;
+  }
+  .section-container {
+    padding: 0px 20px;
+  }
+  .section-container span {
+    font-size: small;
+  }
+  .section-container h1 {
+    font-size: 20px;
+  }
+  .section-container p {
+    font-size: small;
+  }
+  .section-container .secction-card {
+    gap: 20px;
+    padding: 0px;
+  }
+  .section-container .secction-card .section-card-1 {
+    align-items: center;
+    gap: 20px;
+  }
+  .section-container .secction-card .section-card-1 p {
+    font-size: small;
+  }
+  .section-container .secction-card .section-card-1 img {
+    width: 20%;
+    height: 50%;
+  }
+  .section-contain h1 {
+    font-size: 20px;
+  }
+  .section-contain span {
+    font-size: small;
+    padding-left: 20px;
+  }
+  .section-contain .container {
+    padding: 20px 0;
+  }
+  .section-contain .container .wrapper {
+    padding: 2px 2%;
+  }
+  .section-contain .container .card-aree {
+    display: grid;
+    margin-top: 10px;
+    grid-gap: 10px;
+  }
+  .section-contain .container .card-aree .card .overlay p {
+    font-size: small;
+  }
+  .section-contain .container .card-aree .card .overlay span {
+    font-size: 5px;
+    padding: 0px;
+  }
+  .next-section {
+    margin: 20px;
+  }
+  .next-section h1 {
+    font-size: 20px;
+  }
+  .next-section p {
+    font-size: small;
+  }
+  .next-section .next-section-1 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .next-section .next-section-1 .first {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .next-section .next-section-1 .first img {
+    width: 98%;
+  }
+  .next-section .next-section-1 .first .text p {
+    font-size: small;
+  }
+  .slideshow {
+    height: 20vh;
+  }
+  .slideshow h1 {
+    font-size: 20px;
+  }
+  .slideshow .language img {
+    width: 5%;
+  }
+  .slideshow .language .html {
+    height: 8vh;
+    width: 10%;
+    margin-top: 14px;
+  }
+  .slideshow .language .css {
+    height: 10%;
+    width: 10%;
+    margin-top: 6%;
+  }
+  .slideshow .language .js {
+    margin-top: 18px;
+  }
+  .slideshow .language .pythone {
+    width: 15%;
+    height: 15%;
+  }
+  .slideshow .language .cc {
+    width: 10%;
+    height: 10%;
+    margin-top: 4%;
+  }
+}
 .footer-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -522,20 +720,19 @@ marquee .p {
     position: relative;
   }
   .footer-container .new input {
-    position: relative;
     width: 100%;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
   }
   .footer-container .new button {
-    position: relative;
     margin: 10px 0 0;
     width: 100%;
     font-size: 14px;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
   }
 }
 

@@ -183,6 +183,9 @@
     // Medai
 
     @media (max-width: 576px) {
+
+
+        
         grid-template-columns: 1fr 1fr;
         padding: 20px;
         height: auto;
@@ -218,21 +221,24 @@
         }
         .new {
             position: relative;
+          
 
             input {
-                position: relative;
+                // position: relative;
                 width: 100%;
                 font-size: 14px;
-                padding: 10px;
+                padding: 5px;
+            
             }
 
             button {
-                position: relative;
+                // position: relative;
                 margin: 10px 0 0;
                 width: 100%;
                 font-size: 14px;
-                padding: 10px;
+                padding: 5px;
                 @include center;
+                margin-top: 40px;
             }
         }
     }
