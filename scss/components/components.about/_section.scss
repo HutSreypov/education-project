@@ -185,6 +185,58 @@
     }
 }
 
+// ============ME==============
+.personal-infor {
+    @include center;
+    margin-top: 60px;
+    height: 90vh;
+    padding: 0px 100px;
+
+    .card-infor {
+        @include center;
+        width: 100%;
+        gap: 40px;
+
+        .img-border {
+            border: 1px solid $hover-color;
+            padding: 10px;
+            border-radius: 50%;
+            width: 80%;
+            height: 58vh;
+            @include center;
+
+            img {
+                width: 100%;
+                border-radius: 50%;
+
+            }
+        }
+
+        .infor-text {
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            line-height: 1.5;
+            gap: 20px;
+
+            h2 {
+                font-size: 46px;
+                color: $hover-color;
+            }
+
+            p {
+                color: $gray-color;
+
+            }
+        }
+
+
+
+    }
+
+}
+
 
 // ============RESPONSIVE============================================
 
@@ -356,13 +408,85 @@
             grid-template-columns: 1fr;
             gap: 24px;
             padding-left: 40px;
+
             .expert-1 {
                 height: 58vh;
                 width: 90%;
+
                 img {
                     width: 100%;
                 }
             }
         }
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .personal-infor {
+        flex-direction: column;
+        margin-top: 0px;
+        margin: 0px;
+        height: 70vh;
+        padding: 0px 50px;
+
+        .card-infor {
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 0px;
+
+            .img-border {
+                align-self: flex-start;
+                width: 70%;
+                height: 40vh;
+                @include center;
+
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+
+@media (max-width: 576px){
+    .personal-infor {
+        padding: 0px 30px;
+        height: 90vh;
+        .card-infor {
+            flex-direction: column;
+            gap: 0px;
+            margin-top: 0px;
+            .img-border {
+                align-self: center;
+                width: 75%;
+                height: 34vh;
+                @include center;
+
+                img {
+                    width: 100%;
+                    border-radius: 50%;
+
+                }
+            }
+            .infor-text{
+                
+                h2{
+                    text-align: center;
+                    font-size: 30px;
+                }
+                .none{
+                    display: none;
+                }
+            }
+
+        }
+
     }
 }
