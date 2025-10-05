@@ -17,3 +17,26 @@ marquee{
           gap: 100px;
     }
 }
+
+// ============RESPONSIVE============================================
+
+@media (max-width: 992px) {
+    .header-container {
+        height: 30vh;
+    }
+    .title{
+      font-size: 12px;
+      text-align: center;
+      padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        height: 40vh;
+    }
+
+    .title {
+      font-size: 10px;
+    }
+}
